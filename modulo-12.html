@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 12 — Energia e proteção elétrica | Fundamentos de TI</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo">💻</span> Fundamentos de TI</a>
+    <nav class="topnav">
+      <a href="index.html">Início</a>
+      <a href="modulo-11.html">← Módulo 11</a>
+      <a href="modulo-12.html" class="active">Módulo 12</a>
+      <a href="modulo-13.html">Módulo 13 →</a>
+    </nav>
+  </div>
+  <div class="course-progress">
+    <span id="progress-label">0/16 módulos concluídos</span>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="tag">Módulo 12 · 2 horas</span>
+    <h1>Energia e proteção elétrica para TI</h1>
+    <p class="subtitle">127V ou 220V? Filtro de linha, nobreak ou estabilizador? O que realmente protege seu equipamento.</p>
+  </div>
+
+  <div class="objectives">
+    <h2>🎯 Objetivos de aprendizagem</h2>
+    <ul>
+      <li>Entender tensão (127V/220V), potência (W) e o que é equipamento bivolt.</li>
+      <li>Diferenciar filtro de linha, estabilizador e nobreak — e saber qual usar.</li>
+      <li>Compreender aterramento e surtos elétricos.</li>
+      <li>Cuidar bem de baterias de notebooks e celulares.</li>
+      <li>Saber como proceder em quedas de energia e tempestades.</li>
+    </ul>
+  </div>
+
+  <h2>12.1 O básico: tensão, corrente e potência</h2>
+  <ul>
+    <li><strong>Tensão (Volts, V):</strong> a "pressão" da eletricidade. No Brasil, 127V (o popular "110V") ou 220V, dependendo da cidade — em Brasília, por exemplo, é 220V.</li>
+    <li><strong>Corrente (Ampères, A):</strong> o fluxo em si.</li>
+    <li><strong>Potência (Watts, W):</strong> quanto de energia o aparelho consome por segundo. Um desktop comum consome 100–400 W; um PC gamer pode passar de 600 W; um notebook, 30–100 W.</li>
+  </ul>
+  <div class="box box-warn">
+    <div class="box-title">⚠️ Ligou na tensão errada?</div>
+    <p>Aparelho <strong>bivolt</strong> (100–240V) aceita qualquer tomada do Brasil — carregadores de notebook e celular quase sempre são. Aparelho <strong>127V ligado em 220V</strong> queima na hora. Sempre confira a etiqueta antes de plugar!</p>
+  </div>
+
+  <h2>12.2 Os três protetores: filtro, estabilizador e nobreak</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Equipamento</th><th>O que faz</th><th>Veredito</th></tr>
+    <tr><td><strong>Filtro de linha (com DPS)</strong></td><td>Protege contra <strong>surtos</strong> (picos de energia) e permite ligar vários aparelhos</td><td>✅ Recomendado para tudo. Compre de marca confiável, com fusível/disjuntor e proteção contra surto (DPS)</td></tr>
+    <tr><td><strong>Estabilizador</strong></td><td>Tenta "estabilizar" a tensão com relés (tec-tec)</td><td>❌ <strong>Não use em computadores modernos!</strong> Fontes atuais já fazem esse trabalho melhor; o estabilizador ainda limita a potência e atrasa a resposta</td></tr>
+    <tr><td><strong>Nobreak (UPS)</strong></td><td>Tem bateria interna: mantém tudo ligado na queda de energia e dá tempo de salvar e desligar</td><td>✅ Vale para desktop (que desliga na hora), roteador e equipamentos críticos. Para notebook, é opcional (ele já tem bateria)</td></tr>
+  </table>
+  </div>
+  <div class="box box-tip">
+    <div class="box-title">💡 Dimensionando o nobreak</div>
+    <p>Nobreak é medido em <strong>VA</strong> (aproximadamente Watts × 1,6 para folga). Para um PC de escritório (~200 W) + monitor, um nobreak de 600–700 VA segura de 10 a 20 minutos — tempo de sobra para salvar tudo e desligar com calma.</p>
+  </div>
+
+  <h2>12.3 Aterramento e surtos</h2>
+  <ul>
+    <li><strong>Aterramento</strong> é o fio "de segurança" (o terceiro pino do plugue) que desvia descargas e fugas de corrente para a terra. Tomada sem terra + carcaça metálica = choque ao tocar.</li>
+    <li><strong>Nunca use o "T" (benjamim) ou adaptador que corta o pino de terra</strong> para equipamentos sensíveis. Se a tomada é de 2 pinos antigos, chame um eletricista.</li>
+    <li><strong>Surtos</strong> (raios, religação da rede) viajam até pela linha telefônica/fibra metálica. Em tempestade forte com raios caindo perto: desligue da tomada e desconecte o cabo de rede.</li>
+  </ul>
+
+  <h2>12.4 Baterias: notebook e celular</h2>
+  <ul>
+    <li>Baterias de <strong>lítio</strong> não "viciam" como as antigas — não precisa descarregar até 0% (isso, aliás, desgasta).</li>
+    <li>O maior inimigo é o <strong>calor</strong>: não use notebook na cama/sofã tampando as saídas de ar, nem deixe celular no sol ou no painel do carro.</li>
+    <li>Deixar o notebook na tomada o tempo todo é aceitável; muitos têm modo de "preservação de bateria" (carrega até 60–80%) — ative se existir.</li>
+    <li>Para guardar por meses: deixe a bateria em ~50%, local fresco.</li>
+  </ul>
+
+  <h2>12.5 Queda de energia: o que fazer</h2>
+  <ol>
+    <li><strong>Desktop sem nobreak:</strong> ele desliga na hora. Ao voltar a energia, aguarde ~1 minuto antes de ligar (evita surto da religação).</li>
+    <li><strong>Depois de queda brusca:</strong> o Windows pode ligar em modo de recuperação ("o computador não foi desligado corretamente") — é normal, deixe concluir.</li>
+    <li><strong>HDs odeiam queda de energia</strong> durante gravação: mais um motivo para SSD (Módulo 4) e backup (Módulo 10).</li>
+    <li><strong>Roteador:</strong> com nobreak pequeno, sua internet continua no apagão — ótimo para quem trabalha em casa.</li>
+  </ol>
+
+  <div class="box box-info">
+    <div class="box-title">ℹ️ Resumindo</div>
+    <p>Confira a <strong>tensão</strong> antes de ligar (bivolt = tranquilo). <strong>Filtro de linha com DPS: sim</strong> para tudo. <strong>Estabilizador: não</strong> para PCs modernos. <strong>Nobreak: sim</strong> para desktop e roteador. Respeite o <strong>aterramento</strong>, proteja-se de surtos em tempestades e trate baterias de lítio com carinho (nada de calor extremo).</p>
+  </div>
+
+  <h2>🛠️ Atividade prática</h2>
+  <div class="card">
+    <ol>
+      <li>Olhe a etiqueta da fonte do seu carregador de celular/notebook: está escrito "100–240V"? Então é bivolt. Anote também a potência (W).</li>
+      <li>Inspecione as tomadas da sua casa: quantas têm o terceiro pino (terra)? Você usa benjamins/T em algum equipamento caro? Repense.</li>
+      <li>Pesquise o preço de um filtro de linha com DPS e de um nobreak 600 VA em uma loja online. Quanto custaria proteger seu setup?</li>
+    </ol>
+  </div>
+
+  <h2>📝 Quiz do Módulo 12</h2>
+  <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
+  <div class="quiz" id="quiz" data-quiz='[
+    {"q":"Um aparelho 127V é ligado em uma tomada 220V. O que provavelmente acontece?","options":["Ele funciona mais rápido","Ele queima","Nada acontece","Ele consome menos energia"],"answer":1,"explain":"Sem ser bivolt, o aparelho recebe quase o dobro da tensão prevista e queima."},
+    {"q":"Qual a recomendação atual sobre estabilizadores para computadores modernos?","options":["São obrigatórios","Não são recomendados: fontes modernas fazem esse trabalho, e o estabilizador ainda limita potência","Devem ser usados com nobreak","Substituem o filtro de linha"],"answer":1,"explain":"O 'tec-tec' dos relés é tecnologia ultrapassada para PCs atuais; use filtro de linha com DPS (e nobreak se quiser bateria)."},
+    {"q":"Para que serve o nobreak (UPS)?","options":["Acelerar a internet","Manter os equipamentos ligados por um tempo durante queda de energia, permitindo salvar e desligar","Aumentar a potência do processador","Resfriar o gabinete"],"answer":1,"explain":"A bateria interna dá autonomia de minutos preciosos para um desligamento seguro."},
+    {"q":"Sobre baterias de lítio (celular/notebook), qual afirmação é correta?","options":["Precisa descarregar até 0% antes de carregar","O calor é o principal inimigo da vida útil","Viciam se ficarem na tomada","Devem ser sempre carregadas até 100% e usadas até 0%"],"answer":1,"explain":"Lítio não vicia; ciclos profundos e calor extremo desgastam. Evite superaquecimento."},
+    {"q":"O terceiro pino do plugue brasileiro serve para:","options":["Economizar energia","Aterramento: desviar descargas e fugas de corrente com segurança","Aumentar a velocidade","Segurar melhor na tomada"],"answer":1,"explain":"Terra = segurança contra choques e surtos. Não corte nem adapte esse pino."}
+  ]'></div>
+  <div class="quiz-result" id="quiz-result"></div>
+
+  <div class="complete-row">
+    <button class="btn" id="btn-complete" data-module="12">✓ Concluir módulo 12</button>
+    <span class="complete-msg">Módulo concluído!</span>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="modulo-11.html"><span class="dir">← Anterior</span><span class="t">11 · Como escolher e montar um PC</span></a>
+    <a class="next" href="modulo-13.html"><span class="dir">Próximo módulo →</span><span class="t">13 · Ferramentas de produtividade</span></a>
+  </div>
+</main>
+
+<footer>Curso Fundamentos de TI · Módulo 12 de 16</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

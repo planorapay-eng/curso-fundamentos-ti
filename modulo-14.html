@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 14 — Como nascem os programas | Fundamentos de TI</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo">💻</span> Fundamentos de TI</a>
+    <nav class="topnav">
+      <a href="index.html">Início</a>
+      <a href="modulo-13.html">← Módulo 13</a>
+      <a href="modulo-14.html" class="active">Módulo 14</a>
+      <a href="modulo-15.html">Módulo 15 →</a>
+    </nav>
+  </div>
+  <div class="course-progress">
+    <span id="progress-label">0/16 módulos concluídos</span>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="tag">Módulo 14 · 3 horas</span>
+    <h1>Como nascem os programas: lógica, algoritmos e primeira programação</h1>
+    <p class="subtitle">Você já sabe o que é software. Agora descubra como ele é criado — e escreva seus primeiros algoritmos.</p>
+  </div>
+
+  <div class="objectives">
+    <h2>🎯 Objetivos de aprendizagem</h2>
+    <ul>
+      <li>Explicar o que é um algoritmo com exemplos do cotidiano.</li>
+      <li>Entender as três estruturas da lógica: sequência, decisão e repetição.</li>
+      <li>Ler um pseudocódigo simples e prever o resultado.</li>
+      <li>Conhecer as principais linguagens de programação e para que servem.</li>
+      <li>Escrever seu primeiro programa visual no Scratch.</li>
+    </ul>
+  </div>
+
+  <h2>14.1 Algoritmo: a receita de bolo</h2>
+  <p><strong>Algoritmo</strong> é uma <strong>sequência finita e ordenada de passos</strong> que resolve um problema. Você usa algoritmos o dia todo sem saber:</p>
+  <div class="analogy">
+    <div class="box-title">🧠 Algoritmo "trocar uma lâmpada"</div>
+    <p>1) Pegar a escada. 2) Pegar a lâmpada nova. 3) Subir na escada. 4) Girar a lâmpada queimada até soltar. 5) Colocar a nova. 6) Testar o interruptor. <strong>7) Se não acender → verificar disjuntor e voltar ao passo 6.</strong> Pronto: sequência + decisão. Um programa de computador é isso, escrito em uma linguagem que a máquina entende.</p>
+  </div>
+  <p>O computador é <strong>rápido, mas burro</strong>: ele faz exatamente o que o algoritmo manda — nem mais, nem menos. Por isso programar é, antes de tudo, <strong>pensar com clareza</strong>.</p>
+
+  <h2>14.2 As três estruturas fundamentais</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Estrutura</th><th>Em português</th><th>Pseudocódigo</th></tr>
+    <tr><td><strong>Sequência</strong></td><td>Faça um passo após o outro</td><td><code>leia(nome)</code><br><code>escreva("Olá, " + nome)</code></td></tr>
+    <tr><td><strong>Decisão (SE/ENTÃO)</strong></td><td>Se uma condição for verdadeira, faça X; senão, faça Y</td><td><code>SE media &gt;= 7 ENTÃO<br>&nbsp;&nbsp;escreva("Aprovado")<br>SENAO<br>&nbsp;&nbsp;escreva("Reprovado")</code></td></tr>
+    <tr><td><strong>Repetição (loop)</strong></td><td>Repita algo enquanto/para cada</td><td><code>PARA i DE 1 ATÉ 10 FAÇA<br>&nbsp;&nbsp;escreva(i)<br>FIMPARA</code></td></tr>
+  </table>
+  </div>
+  <p><strong>Todo</strong> programa do mundo — WhatsApp, jogos, sistema do banco — é construído combinando essas três peças. Sério.</p>
+
+  <h3>Exemplo para ler com calma</h3>
+  <div class="card">
+    <p><strong>Problema:</strong> somar todos os números de 1 a 5.</p>
+    <p><code>total ← 0</code><br>
+    <code>PARA n DE 1 ATÉ 5 FAÇA</code><br>
+    <code>&nbsp;&nbsp;total ← total + n</code><br>
+    <code>FIMPARA</code><br>
+    <code>escreva(total)</code></p>
+    <p><strong>Executando na cabeça ("teste de mesa"):</strong> total=0 → +1=1 → +2=3 → +3=6 → +4=10 → +5=<strong>15</strong>. O programa imprime 15. Esse exercício de simular passo a passo é o treino nº 1 de lógica.</p>
+  </div>
+
+  <h2>14.3 Linguagens de programação: qual é qual</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Linguagem</th><th>Usada principalmente para</th><th>Dificuldade inicial</th></tr>
+    <tr><td><strong>Python</strong></td><td>Iniciantes, dados, automação, IA, back-end</td><td>⭐ Fácil — a melhor para começar</td></tr>
+    <tr><td><strong>JavaScript</strong></td><td>Sites interativos (roda no navegador), apps</td><td>Fácil/média</td></tr>
+    <tr><td><strong>HTML + CSS</strong></td><td>Não são linguagens de programação, mas a estrutura (HTML) e o visual (CSS) de todo site</td><td>Fácil</td></tr>
+    <tr><td><strong>SQL</strong></td><td>Consultar bancos de dados</td><td>Fácil/média</td></tr>
+    <tr><td><strong>Java / C#</strong></td><td>Sistemas corporativos, Android (Java/Kotlin), jogos (C#/Unity)</td><td>Média</td></tr>
+    <tr><td><strong>C / C++</strong></td><td>Sistemas operacionais, jogos AAA, eletrônica</td><td>Difícil</td></tr>
+  </table>
+  </div>
+  <p>E como o computador entende texto se ele só entende 0 e 1 (Módulo 1)? Um programa chamado <strong>compilador/interpretador</strong> traduz o código-fonte (o texto que o programador escreve) para <strong>código de máquina</strong> (os 0s e 1s que a CPU executa — Módulo 3).</p>
+
+  <h2>14.4 Quem faz o quê no desenvolvimento</h2>
+  <ul>
+    <li><strong>Front-end:</strong> a parte visual com que o usuário interage (HTML, CSS, JavaScript).</li>
+    <li><strong>Back-end:</strong> os bastidores: servidor, regras de negócio, banco de dados (Python, Java, C#, Node...).</li>
+    <li><strong>Full-stack:</strong> faz os dois.</li>
+    <li><strong>Mobile:</strong> apps de celular (Kotlin/Android, Swift/iOS, Flutter/React Native para os dois).</li>
+    <li><strong>Dados/IA:</strong> análise, machine learning (Python + SQL dominam).</li>
+    <li><strong>QA/Testes:</strong> garante a qualidade antes de lançar.</li>
+  </ul>
+
+  <h2>14.5 Ferramentas para começar hoje (grátis)</h2>
+  <ul>
+    <li><strong>Scratch</strong> (scratch.mit.edu) — programação visual de blocos, perfeita para internalizar lógica brincando.</li>
+    <li><strong>Portugol Studio</strong> — pseudocódigo em português (o "Visualg" moderno).</li>
+    <li><strong>Python</strong> — instale python.org e use o IDLE, ou rode direto no navegador em <strong>replit.com</strong>.</li>
+    <li><strong>VS Code</strong> (code.visualstudio.com) — o editor de código mais usado do mundo, gratuito.</li>
+  </ul>
+
+  <div class="box box-info">
+    <div class="box-title">ℹ️ Resumindo</div>
+    <p><strong>Algoritmo</strong> = passos ordenados para resolver um problema. Toda programação se apoia em <strong>sequência, decisão (SE) e repetição (PARA/ENQUANTO)</strong>. Linguagens são ferramentas para públicos diferentes — <strong>Python</strong> é a porta de entrada clássica. Compiladores traduzem código em 0s e 1s. Comece pelo <strong>Scratch</strong>, sem medo.</p>
+  </div>
+
+  <h2>🛠️ Atividade prática</h2>
+  <div class="card">
+    <ol>
+      <li><strong>No papel:</strong> escreva o algoritmo de "fazer um café com leite" (ou outro do seu dia a dia) com passos numerados, incluindo pelo menos um SE e um ENQUANTO. Ex.: "ENQUANTO xícara não estiver cheia, despeje café".</li>
+      <li><strong>Teste de mesa:</strong> qual a saída deste pseudocódigo?<br>
+      <code>x ← 2</code><br>
+      <code>ENQUANTO x &lt; 20 FAÇA</code><br>
+      <code>&nbsp;&nbsp;escreva(x)</code><br>
+      <code>&nbsp;&nbsp;x ← x * 2</code><br>
+      <code>FIMENQUANTO</code><br>
+      <em>(Resposta: 2, 4, 8, 16 — confira simulando passo a passo!)</em></li>
+      <li><strong>Scratch:</strong> acesse scratch.mit.edu, crie uma conta e faça o gatinho andar e falar "Olá, mundo!" usando 3 blocos. Depois tente fazê-lo repetir a fala 5 vezes.</li>
+    </ol>
+  </div>
+
+  <h2>📝 Quiz do Módulo 14</h2>
+  <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
+  <div class="quiz" id="quiz" data-quiz='[
+    {"q":"O que é um algoritmo?","options":["Um tipo de vírus de computador","Uma sequência finita e ordenada de passos que resolve um problema","Uma peça do processador","Um programa pago"],"answer":1,"explain":"Receita de bolo, instruções de montagem e programas de computador são todos algoritmos."},
+    {"q":"Quais são as três estruturas fundamentais da lógica de programação?","options":["Entrada, saída e impressão","Sequência, decisão e repetição","HTML, CSS e JavaScript","Soma, média e divisão"],"answer":1,"explain":"Todo programa combina passos em ordem (sequência), SE/SENÃO (decisão) e loops (repetição)."},
+    {"q":"Qual linguagem é a mais recomendada para um iniciante absoluto começar?","options":["C++","Assembly","Python","Java"],"answer":2,"explain":"Python tem sintaxe simples e legível, e é usada em dados, automação, IA e web."},
+    {"q":"O que o compilador/interpretador faz?","options":["Desenha a interface do programa","Traduz o código-fonte para código de máquina (0s e 1s)","Acelera a internet","Faz backup do código"],"answer":1,"explain":"A CPU só executa linguagem de máquina; o compilador/interpretador faz a ponte."},
+    {"q":"Dado: total ← 0; PARA n DE 1 ATÉ 3 FAÇA total ← total + n. O valor final de total é:","options":["3","5","6","0"],"answer":2,"explain":"Teste de mesa: 0+1=1, 1+2=3, 3+3=6."}
+  ]'></div>
+  <div class="quiz-result" id="quiz-result"></div>
+
+  <div class="complete-row">
+    <button class="btn" id="btn-complete" data-module="14">✓ Concluir módulo 14</button>
+    <span class="complete-msg">Módulo concluído!</span>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="modulo-13.html"><span class="dir">← Anterior</span><span class="t">13 · Ferramentas de produtividade</span></a>
+    <a class="next" href="modulo-15.html"><span class="dir">Próximo módulo →</span><span class="t">15 · Nuvem e máquinas virtuais</span></a>
+  </div>
+</main>
+
+<footer>Curso Fundamentos de TI · Módulo 14 de 16</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

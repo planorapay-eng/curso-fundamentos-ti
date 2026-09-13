@@ -1,6 +1,6 @@
 /* ===== Curso Fundamentos de TI — lógica (quiz + progresso) ===== */
 (function () {
-  var TOTAL_MODULES = 10;
+  var TOTAL_MODULES = 16;
   var LS_KEY = 'curso-ti-progresso';
 
   function getProgress() {

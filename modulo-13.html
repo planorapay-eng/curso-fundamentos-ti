@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 13 — Ferramentas de produtividade | Fundamentos de TI</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo">💻</span> Fundamentos de TI</a>
+    <nav class="topnav">
+      <a href="index.html">Início</a>
+      <a href="modulo-12.html">← Módulo 12</a>
+      <a href="modulo-13.html" class="active">Módulo 13</a>
+      <a href="modulo-14.html">Módulo 14 →</a>
+    </nav>
+  </div>
+  <div class="course-progress">
+    <span id="progress-label">0/16 módulos concluídos</span>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="tag">Módulo 13 · 3 horas</span>
+    <h1>Ferramentas de produtividade: editores, planilhas e apresentações</h1>
+    <p class="subtitle">O pacote office é o aplicativo mais pedido em qualquer vaga — domine o essencial dele aqui.</p>
+  </div>
+
+  <div class="objectives">
+    <h2>🎯 Objetivos de aprendizagem</h2>
+    <ul>
+      <li>Conhecer as três suítes principais: Microsoft 365, LibreOffice e Google Workspace.</li>
+      <li>Criar e formatar documentos de texto com boa apresentação.</li>
+      <li>Usar planilhas: células, fórmulas básicas (SOMA, MÉDIA) e gráficos.</li>
+      <li>Montar apresentações simples e eficazes.</li>
+      <li>Trabalhar com arquivos na nuvem em equipe.</li>
+    </ul>
+  </div>
+
+  <h2>13.1 As três suítes (todas fazem o mesmo trabalho)</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Ferramenta</th><th>Microsoft 365 (pago)</th><th>LibreOffice (grátis)</th><th>Google Workspace (nuvem)</th></tr>
+    <tr><td>Texto</td><td>Word</td><td>Writer</td><td>Google Docs</td></tr>
+    <tr><td>Planilha</td><td>Excel</td><td>Calc</td><td>Google Sheets</td></tr>
+    <tr><td>Apresentação</td><td>PowerPoint</td><td>Impress</td><td>Google Slides</td></tr>
+    <tr><td>Onde roda</td><td>Instalado + nuvem</td><td>Instalado</td><td>No navegador</td></tr>
+    <tr><td>Colaboração em tempo real</td><td>Sim</td><td>Limitada</td><td>⭐ Excelente</td></tr>
+  </table>
+  </div>
+  <p>Os formatos são compatíveis entre si: um <code>.docx</code> abre em qualquer uma. Na dúvida de qual aprender primeiro: <strong>Excel/Word</strong> são os nomes mais pedidos em vagas — mas as habilidades valem para todas.</p>
+
+  <h2>13.2 Documentos de texto (Word/Writer/Docs)</h2>
+  <p>Conceitos essenciais:</p>
+  <ul>
+    <li><strong>Formatação vs. conteúdo:</strong> use <strong>Estilos</strong> (Título 1, Título 2, Normal) em vez de só aumentar a letra manualmente — estilos geram sumário automático e mantêm o documento consistente.</li>
+    <li><strong>Negrito/itálico/sublinhado:</strong> <code>Ctrl+B</code> / <code>Ctrl+I</code> / <code>Ctrl+U</code>.</li>
+    <li><strong>Salvar x Salvar como:</strong> <code>Ctrl+S</code> salva; "Salvar como" cria cópia ou troca o formato (ex.: exportar como <strong>PDF</strong>).</li>
+    <li><strong>PDF:</strong> formato "fotografado" do documento — todo mundo vê igual, em qualquer aparelho. Use para enviar trabalho pronto.</li>
+    <li><strong>Verificação ortográfica</strong> e <strong>comentários</strong> (revisão em equipe) ficam na aba Revisão.</li>
+  </ul>
+
+  <h2>13.3 Planilhas (Excel/Calc/Sheets): a habilidade de ouro</h2>
+  <ul>
+    <li><strong>Célula:</strong> cada quadradinho, identificada por coluna + linha: <code>A1</code>, <code>B7</code>, <code>C10</code>.</li>
+    <li><strong>Fórmula:</strong> tudo começa com <code>=</code>. Ex.: <code>=A1+A2</code>.</li>
+    <li><strong>Intervalo:</strong> <code>A1:A10</code> significa "de A1 até A10".</li>
+  </ul>
+  <div class="card">
+    <h3 style="margin-top:0">As 6 fórmulas que resolvem 80% do dia a dia</h3>
+    <div class="table-wrap">
+    <table>
+      <tr><th>Fórmula</th><th>Para quê</th><th>Exemplo</th></tr>
+      <tr><td><code>=SOMA(A1:A10)</code></td><td>Somar tudo (em inglês: <code>SUM</code>)</td><td>Total de gastos do mês</td></tr>
+      <tr><td><code>=MÉDIA(A1:A10)</code></td><td>Média (<code>AVERAGE</code>)</td><td>Média de notas</td></tr>
+      <tr><td><code>=MÁXIMO(A1:A10)</code> / <code>=MÍNIMO(...)</code></td><td>Maior/menor valor</td><td>Melhor venda do mês</td></tr>
+      <tr><td><code>=CONT.NÚM(A1:A10)</code></td><td>Contar células com número (<code>COUNT</code>)</td><td>Quantos lançamentos</td></tr>
+      <tr><td><code>=SE(A1&gt;=7;"Aprovado";"Reprovado")</code></td><td>Decisão: se X então Y, senão Z (<code>IF</code>)</td><td>Status automático</td></tr>
+      <tr><td><code>=PROCV(valor;tabela;coluna;0)</code></td><td>Buscar dado em outra tabela (<code>VLOOKUP</code>)</td><td>Puxar preço pelo código</td></tr>
+    </table>
+    </div>
+  </div>
+  <ul>
+    <li><strong>Alça de preenchimento:</strong> o quadradinho no canto da célula — arraste para copiar a fórmula para baixo.</li>
+    <li><strong>Gráficos:</strong> selecione os dados → Inserir → Gráfico de colunas/pizza. Um bom gráfico vale mais que 500 números.</li>
+    <li><strong>Formatação condicional:</strong> colore células automaticamente (ex.: vermelho para valores negativos).</li>
+  </ul>
+
+  <h2>13.4 Apresentações (PowerPoint/Impress/Slides)</h2>
+  <ul>
+    <li><strong>Regra de ouro:</strong> slide é apoio visual, não teleprompter. Pouco texto (tópicos de 1 linha), fontes grandes (24pt+), uma ideia por slide.</li>
+    <li><strong>F5</strong> inicia a apresentação; <strong>Esc</strong> sai.</li>
+    <li>Imagens de qualidade e ícones &gt; clipart. Transições e animações: use com moderação (ou nada).</li>
+    <li>Alternativa moderna na nuvem: <strong>Canva</strong> (modelos prontos, gratuito).</li>
+  </ul>
+
+  <h2>13.5 Colaboração na nuvem</h2>
+  <ul>
+    <li><strong>Google Docs/Sheets</strong> e <strong>OneDrive/SharePoint</strong>: várias pessoas editam o mesmo arquivo ao mesmo tempo, cada cursor com uma cor.</li>
+    <li><strong>Compartilhar</strong> com permissões: "pode ver" vs. "pode editar" — escolha com cuidado (Módulo 10!).</li>
+    <li><strong>Histórico de versões:</strong> alguém apagou tudo sem querer? Dá para restaurar uma versão anterior. Salva-vidas!</li>
+  </ul>
+
+  <div class="box box-info">
+    <div class="box-title">ℹ️ Resumindo</div>
+    <p>Três suítes, mesmas funções: <strong>Microsoft 365, LibreOffice (grátis) e Google Workspace (nuvem)</strong>. Texto: use <strong>estilos</strong> e exporte em <strong>PDF</strong>. Planilha: <code>=SOMA</code>, <code>=MÉDIA</code>, <code>=SE</code>, <code>=PROCV</code> + gráficos resolvem quase tudo. Apresentação: pouco texto, uma ideia por slide. Na nuvem, colaboração e histórico de versões são os superpoderes.</p>
+  </div>
+
+  <h2>🛠️ Atividade prática</h2>
+  <div class="card">
+    <ol>
+      <li><strong>Planilha do mês:</strong> crie uma planilha "Gastos" com colunas Data | Descrição | Categoria | Valor. Lance 10 gastos fictícios (ou reais). No fim: <code>=SOMA()</code> do total, <code>=MÉDIA()</code> por gasto e um gráfico de pizza por categoria.</li>
+      <li><strong>Fórmula SE:</strong> adicione uma coluna "Status" com <code>=SE(D2&gt;100;"Alto";"Normal")</code> e arraste para baixo.</li>
+      <li><strong>Documento:</strong> escreva um resumo de 1 página sobre este curso usando Título 1, Título 2, negrito e uma lista. Exporte como PDF.</li>
+      <li>Salve tudo nas suas pastas do Módulo 8, com nome datado. 😉</li>
+    </ol>
+  </div>
+
+  <h2>📝 Quiz do Módulo 13</h2>
+  <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
+  <div class="quiz" id="quiz" data-quiz='[
+    {"q":"Qual suíte de escritório é totalmente gratuita e instalada no computador?","options":["Microsoft 365","LibreOffice","Adobe Acrobat","Windows Office"],"answer":1,"explain":"O LibreOffice (Writer, Calc, Impress) é software livre e gratuito — alternativa completa ao pacote Microsoft."},
+    {"q":"Toda fórmula em planilha deve começar com:","options":["O sinal de igual (=)","A palavra SOMA","O símbolo #","Letra F"],"answer":0,"explain":"=A1+A2, =SOMA(A1:A10) — sem o = inicial, o texto é tratado como texto comum."},
+    {"q":"Para somar todos os valores de A1 até A20, a fórmula correta é:","options":["=SOMA(A1:A20)","=A1+A20","SOMA A1 A20","=TOTAL(A1;A20)"],"answer":0,"explain":"Os dois pontos (:) definem o intervalo inteiro. =A1+A20 somaria apenas as duas células."},
+    {"q":"Para que serve exportar um documento como PDF?","options":["Para deixar o arquivo editável por todos","Para garantir que todos vejam o documento com a mesma formatação, em qualquer aparelho","Para reduzir sempre o tamanho pela metade","Para traduzir o documento"],"answer":1,"explain":"PDF preserva o visual exato — por isso é o padrão para enviar trabalhos prontos e boletos."},
+    {"q":"Qual é a regra de ouro para bons slides de apresentação?","options":["Encher de texto para não esquecer nada","Pouco texto, fontes grandes, uma ideia por slide","Usar muitas animações e transições","Ler o slide inteiro em voz alta"],"answer":1,"explain":"Slide é apoio visual: tópicos curtos, imagens e fala do apresentador carregam o conteúdo."}
+  ]'></div>
+  <div class="quiz-result" id="quiz-result"></div>
+
+  <div class="complete-row">
+    <button class="btn" id="btn-complete" data-module="13">✓ Concluir módulo 13</button>
+    <span class="complete-msg">Módulo concluído!</span>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="modulo-12.html"><span class="dir">← Anterior</span><span class="t">12 · Energia e proteção elétrica</span></a>
+    <a class="next" href="modulo-14.html"><span class="dir">Próximo módulo →</span><span class="t">14 · Como nascem os programas</span></a>
+  </div>
+</main>
+
+<footer>Curso Fundamentos de TI · Módulo 13 de 16</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

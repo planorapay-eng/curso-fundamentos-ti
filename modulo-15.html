@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 15 — Nuvem e máquinas virtuais | Fundamentos de TI</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo">💻</span> Fundamentos de TI</a>
+    <nav class="topnav">
+      <a href="index.html">Início</a>
+      <a href="modulo-14.html">← Módulo 14</a>
+      <a href="modulo-15.html" class="active">Módulo 15</a>
+      <a href="modulo-16.html">Módulo 16 →</a>
+    </nav>
+  </div>
+  <div class="course-progress">
+    <span id="progress-label">0/16 módulos concluídos</span>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="tag">Módulo 15 · 2 horas</span>
+    <h1>Computação em nuvem e máquinas virtuais</h1>
+    <p class="subtitle">O coração da TI moderna: servidores elásticos, serviços sob demanda e computadores "de mentira" que rodam dentro do seu.</p>
+  </div>
+
+  <div class="objectives">
+    <h2>🎯 Objetivos de aprendizagem</h2>
+    <ul>
+      <li>Definir computação em nuvem além do "disco virtual".</li>
+      <li>Diferenciar SaaS, PaaS e IaaS com exemplos.</li>
+      <li>Entender o que é virtualização, máquinas virtuais (VMs) e containers.</li>
+      <li>Criar sua primeira máquina virtual (ou entender como se cria).</li>
+      <li>Pesar vantagens e riscos da nuvem.</li>
+    </ul>
+  </div>
+
+  <h2>15.1 Nuvem é alugar poder de computação</h2>
+  <p>Você já viu que nuvem = servidores de terceiros acessados pela internet (Módulos 4 e 9). O conceito profissional é mais amplo: <strong>computação em nuvem</strong> é usar recursos de TI (servidores, armazenamento, bancos de dados, redes, software) <strong>sob demanda, pagando pelo uso</strong>, sem comprar e manter hardware próprio.</p>
+  <p>Os grandes provedores ("hyperscalers"): <strong>AWS</strong> (Amazon), <strong>Microsoft Azure</strong>, <strong>Google Cloud (GCP)</strong>. No Brasil, todos têm data centers em São Paulo.</p>
+
+  <h2>15.2 SaaS, PaaS e IaaS: a analogia da pizza 🍕</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Modelo</th><th>Analogia da pizza</th><th>Você cuida de</th><th>O provedor cuida de</th><th>Exemplos</th></tr>
+    <tr><td><strong>SaaS</strong> (Software como Serviço)</td><td>Pizza entregue em casa 🛵</td><td>Só usa (e come)</td><td>Tudo: software, servidores, segurança</td><td>Gmail, Netflix, Microsoft 365, Canva, apps de banco</td></tr>
+    <tr><td><strong>PaaS</strong> (Plataforma como Serviço)</td><td>Kit "leve e asse" 🏠🔥</td><td>Seu código/aplicação</td><td>Servidores, sistema operacional, banco de dados</td><td>Google App Engine, Azure App Service, Heroku</td></tr>
+    <tr><td><strong>IaaS</strong> (Infraestrutura como Serviço)</td><td>Comprar ingredientes e fazer tudo 🧑‍🍳</td><td>SO, programas, dados, configuração</td><td>Só o hardware virtualizado + rede física</td><td>EC2 (AWS), VMs do Azure, VPS em geral</td></tr>
+  </table>
+  </div>
+  <p>Quanto mais "para cima" (SaaS), menos trabalho técnico e menos controle. Quanto mais "para baixo" (IaaS), mais liberdade e mais responsabilidade.</p>
+
+  <h2>15.3 Virtualização: um computador dentro do computador</h2>
+  <p>Uma <strong>máquina virtual (VM)</strong> é um computador <strong>simulado por software</strong>: ela tem processador "virtual", RAM virtual, disco virtual e até sistema operacional próprio — rodando dentro de uma janela no seu computador real (o <strong>host</strong>).</p>
+  <ul>
+    <li><strong>Hypervisor</strong> é o programa que cria e gerencia as VMs: <strong>VirtualBox</strong> (grátis, da Oracle), <strong>VMware Workstation Player</strong> (grátis para uso pessoal), <strong>Hyper-V</strong> (incluso no Windows Pro).</li>
+    <li>Na nuvem, os servidores que você aluga (IaaS) <strong>são VMs</strong> rodando em máquinas físicas gigantescas.</li>
+  </ul>
+  <div class="box box-tip">
+    <div class="box-title">💡 Por que VMs são maravilhosas para iniciantes</div>
+    <p>Quer aprender Linux sem risco? Instale o <strong>VirtualBox</strong> (grátis), baixe a ISO do <strong>Ubuntu</strong> e crie uma VM. Se você quebrar o sistema lá dentro, nada acontece com o seu Windows — é só apagar a VM e criar outra. <strong>Snapshot</strong> = "ponto de restauração" da VM: tire um antes de experimentar qualquer coisa perigosa.</p>
+  </div>
+
+  <h3>Containers (noções)</h3>
+  <p>VMs virtualizam o computador inteiro; <strong>containers</strong> (ex.: <strong>Docker</strong>) empacotam apenas o programa + o mínimo necessário, compartilhando o sistema do host. São mais leves e rápidos de iniciar — padrão da indústria para aplicações modernas. Você não precisa dominar isso agora, mas vai ouvir muito o nome.</p>
+
+  <h2>15.4 Vantagens e riscos da nuvem</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>✅ Vantagens</th><th>⚠️ Riscos / limitações</th></tr>
+    <tr><td>Sem comprar servidor: paga só o que usa</td><td>Depende de internet — sem conexão, sem acesso</td></tr>
+    <tr><td>Escala instantânea (site bombou? mais servidores em minutos)</td><td>Custo pode crescer sem controle se não monitorado</td></tr>
+    <tr><td>Acesso de qualquer lugar/dispositivo</td><td>Seus dados estão com terceiros: escolha provedor sério</td></tr>
+    <tr><td>Backup e redundância profissionais</td><td>Conta invadida = dados expostos (senhas fortes + 2FA, Módulo 10!)</td></tr>
+  </table>
+  </div>
+
+  <h2>15.5 Nuvem no seu dia a dia (você já usa!)</h2>
+  <ul>
+    <li>Gmail/Outlook.com = e-mail em SaaS.</li>
+    <li>Fotos do Google/iCloud = armazenamento com sync.</li>
+    <li>Spotify/Netflix = streaming (os arquivos nem moram no seu aparelho).</li>
+    <li>WhatsApp = suas mensagens ficam em servidores; o backup delas vai para a nuvem.</li>
+    <li>Jogos online = o mundo do jogo roda em servidores remotos.</li>
+  </ul>
+
+  <div class="box box-info">
+    <div class="box-title">ℹ️ Resumindo</div>
+    <p>Nuvem = <strong>recursos de TI sob demanda, pagos pelo uso</strong> (AWS, Azure, Google Cloud). <strong>SaaS</strong> (usa pronto: Gmail), <strong>PaaS</strong> (só traz o código), <strong>IaaS</strong> (aluga o servidor cru). <strong>VM</strong> = computador simulado por software — a forma segura de estudar Linux no VirtualBox. <strong>Containers/Docker</strong> = virtualização leve de aplicações.</p>
+  </div>
+
+  <h2>🛠️ Atividade prática</h2>
+  <div class="card">
+    <ol>
+      <li><strong>Classifique:</strong> liste 5 serviços que você usa e marque cada um como SaaS, PaaS ou IaaS (dica: quase tudo do seu dia a dia é SaaS).</li>
+      <li><strong>Desafio (opcional, ~1h):</strong> baixe e instale o <strong>VirtualBox</strong> (virtualbox.org), baixe a ISO do <strong>Ubuntu</strong> (ubuntu.com/download/desktop) e crie uma VM com 2 GB de RAM e 20 GB de disco. Rode o Ubuntu "ao vivo" dentro dela. Tire um snapshot e explore à vontade!</li>
+      <li>Se o seu PC for fraco para VM, rode um Linux direto no navegador em <strong>distrosea.com</strong> e compare a experiência.</li>
+    </ol>
+  </div>
+
+  <h2>📝 Quiz do Módulo 15</h2>
+  <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
+  <div class="quiz" id="quiz" data-quiz='[
+    {"q":"Gmail, Netflix e Microsoft 365 são exemplos de qual modelo de nuvem?","options":["IaaS","PaaS","SaaS","VMaaS"],"answer":2,"explain":"Software pronto para usar pela internet = SaaS (Software como Serviço)."},
+    {"q":"Em qual modelo você aluga um 'servidor cru' na nuvem e instala o sistema operacional e tudo mais?","options":["SaaS","IaaS","PaaS","Streaming"],"answer":1,"explain":"IaaS = infraestrutura como serviço: o provedor dá a máquina virtual; o resto é com você."},
+    {"q":"O que é uma máquina virtual (VM)?","options":["Um computador físico menor","Um computador simulado por software, rodando dentro de outro","Um robô industrial","Um tipo de pendrive rápido"],"answer":1,"explain":"A VM tem CPU, RAM e disco virtuais, criados por um hypervisor (VirtualBox, VMware, Hyper-V)."},
+    {"q":"Qual a grande vantagem de estudar Linux dentro de uma VM?","options":["Deixa a internet mais rápida","Se algo quebrar, o sistema real (host) não é afetado","Substitui o antivírus","Aumenta a RAM do computador"],"answer":1,"explain":"A VM é isolada: erros ficam contidos nela. É o laboratório seguro perfeito para aprender."},
+    {"q":"Containers (Docker) se diferenciam de VMs porque:","options":["São mais pesados que VMs","Empacotam só a aplicação e o mínimo necessário, compartilhando o SO do host — mais leves e rápidos","Precisam de dois sistemas operacionais","Só rodam na AWS"],"answer":1,"explain":"Container não virtualiza hardware inteiro: por isso inicia em segundos e consome poucos recursos."}
+  ]'></div>
+  <div class="quiz-result" id="quiz-result"></div>
+
+  <div class="complete-row">
+    <button class="btn" id="btn-complete" data-module="15">✓ Concluir módulo 15</button>
+    <span class="complete-msg">Módulo concluído!</span>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="modulo-14.html"><span class="dir">← Anterior</span><span class="t">14 · Como nascem os programas</span></a>
+    <a class="next" href="modulo-16.html"><span class="dir">Próximo módulo →</span><span class="t">16 · Carreira em TI e projeto final 🏆</span></a>
+  </div>
+</main>
+
+<footer>Curso Fundamentos de TI · Módulo 15 de 16</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

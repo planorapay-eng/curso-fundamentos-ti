@@ -1,7 +1,7 @@
 # 💻 Curso: Fundamentos de TI — Hardware e Software
 
 Curso interativo em HTML/CSS/JS puro, feito para **iniciantes totais** em tecnologia.
-Carga estimada: **~31 horas** · **10 módulos** · **50 questões de quiz** com correção instantânea.
+Carga estimada: **~46 horas** · **16 módulos** · **80 questões de quiz** com correção instantânea.
 
 ## 🚀 Como usar
 
@@ -27,7 +27,13 @@ python3 -m http.server 8000
 | 7 | [Windows, Linux e macOS](modulo-07.html) | 3h |
 | 8 | [Arquivos e pastas: organização e formatos](modulo-08.html) | 3h |
 | 9 | [Redes e internet](modulo-09.html) | 4h |
-| 10 | [Segurança, manutenção e projeto final](modulo-10.html) | 4h |
+| 10 | [Segurança, manutenção e projeto prático](modulo-10.html) | 4h |
+| 11 | [Como escolher e montar um PC](modulo-11.html) | 3h |
+| 12 | [Energia e proteção elétrica](modulo-12.html) | 2h |
+| 13 | [Ferramentas de produtividade (Word, Excel, apresentações)](modulo-13.html) | 3h |
+| 14 | [Como nascem os programas: lógica e programação](modulo-14.html) | 3h |
+| 15 | [Nuvem e máquinas virtuais](modulo-15.html) | 2h |
+| 16 | [Carreira em TI, revisão geral e projeto final](modulo-16.html) | 2h |
 
 ## ✨ Recursos
 
@@ -35,14 +41,14 @@ python3 -m http.server 8000
 - 📈 Barra de progresso salva no navegador (localStorage)
 - 🛠️ Atividades práticas em cada módulo
 - 🧠 Analogias didáticas (a "cozinha do computador")
-- 🏆 Projeto final: diagnóstico completo do seu dispositivo
+- 🏆 Projeto prático (Módulo 10) + Projeto final de conclusão (Módulo 16)
 - 🌙 Visual dark, responsivo, sem dependências externas
 
 ## 📁 Estrutura
 
 ```
 ├── index.html          # Página inicial do curso
-├── modulo-01.html ... modulo-10.html
+├── modulo-01.html ... modulo-16.html
 └── assets/
     ├── style.css       # Estilos
     └── main.js         # Quiz + progresso

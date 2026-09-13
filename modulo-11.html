@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 11 — Como escolher e montar um PC | Fundamentos de TI</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo">💻</span> Fundamentos de TI</a>
+    <nav class="topnav">
+      <a href="index.html">Início</a>
+      <a href="modulo-10.html">← Módulo 10</a>
+      <a href="modulo-11.html" class="active">Módulo 11</a>
+      <a href="modulo-12.html">Módulo 12 →</a>
+    </nav>
+  </div>
+  <div class="course-progress">
+    <span id="progress-label">0/16 módulos concluídos</span>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="tag">Módulo 11 · 3 horas</span>
+    <h1>Como escolher e montar um PC</h1>
+    <p class="subtitle">Junte tudo que aprendeu nos Módulos 2 a 5 e vire aquela pessoa que escolhe computador sem cair em conversa de vendedor.</p>
+  </div>
+
+  <div class="objectives">
+    <h2>🎯 Objetivos de aprendizagem</h2>
+    <ul>
+      <li>Definir o perfil de uso antes de escolher qualquer peça.</li>
+      <li>Verificar a compatibilidade entre processador, placa-mãe, RAM e fonte.</li>
+      <li>Montar uma lista de compra equilibrada (sem gargalo).</li>
+      <li>Conhecer a ordem lógica de montagem de um desktop.</li>
+      <li>Avaliar um notebook pela ficha técnica.</li>
+    </ul>
+  </div>
+
+  <h2>11.1 Regra nº 1: primeiro o uso, depois as peças</h2>
+  <p>Não existe "melhor computador" — existe o computador <strong>certo para o seu uso e orçamento</strong>. Pergunte-se:</p>
+  <ul>
+    <li>📄 <strong>Estudo/escritório:</strong> navegador, Word/Excel, videoaulas, videochamadas.</li>
+    <li>🎮 <strong>Jogos:</strong> precisa de placa de vídeo dedicada potente.</li>
+    <li>🎨 <strong>Criação:</strong> edição de vídeo/foto pede mais RAM, CPU forte e boa tela.</li>
+    <li>💻 <strong>Programação:</strong> CPU boa, 16 GB+ de RAM, SSD rápido.</li>
+  </ul>
+
+  <h2>11.2 As três configurações-modelo</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Peça</th><th>📄 Estudo/escritório</th><th>🎮 Jogos (intermediário)</th><th>🎨 Criação/trabalho pesado</th></tr>
+    <tr><td>Processador</td><td>Core i3 / Ryzen 3 atual</td><td>Core i5 / Ryzen 5</td><td>Core i7 / Ryzen 7+</td></tr>
+    <tr><td>RAM</td><td>8 GB</td><td>16 GB</td><td>32 GB</td></tr>
+    <tr><td>Armazenamento</td><td>SSD 256 GB</td><td>SSD NVMe 512 GB–1 TB</td><td>SSD NVMe 1 TB+</td></tr>
+    <tr><td>Vídeo</td><td>Integrado</td><td>Dedicado (ex.: RTX/RX intermediária)</td><td>Dedicado potente</td></tr>
+    <tr><td>Fonte</td><td>400 W (80 Plus)</td><td>550–650 W (80 Plus Bronze+)</td><td>750 W+ (80 Plus Gold)</td></tr>
+  </table>
+  </div>
+  <div class="box box-warn">
+    <div class="box-title">⚠️ Gargalo (bottleneck)</div>
+    <p>Um PC é uma corrente: ele é tão rápido quanto seu <strong>elo mais fraco</strong>. Não adianta um processador top com 4 GB de RAM ou com HD antigo. O equilíbrio importa mais que uma peça estrela.</p>
+  </div>
+
+  <h2>11.3 Compatibilidade: o que confere com o quê</h2>
+  <ul>
+    <li><strong>Processador ↔ Placa-mãe:</strong> o <strong>soquete</strong> tem que ser o mesmo (ex.: AM5 para Ryzen 7000/9000; LGA1700/LGA1851 para Intel recentes). O chipset da placa também precisa suportar a geração da CPU.</li>
+    <li><strong>Placa-mãe ↔ RAM:</strong> DDR4 ou DDR5? A placa aceita só um dos tipos — e o pente tem que ser do mesmo tipo.</li>
+    <li><strong>Fonte ↔ tudo:</strong> some o consumo estimado (CPU + GPU + resto) e escolha uma fonte com folga (~30%). Selo <strong>80 Plus</strong> = eficiência comprovada. Marcas confiáveis valem o preço.</li>
+    <li><strong>Gabinete ↔ placa-mãe e GPU:</strong> tamanhos ATX, micro-ATX ou mini-ITX têm que casar; confira o espaço para a placa de vídeo (comprimento em mm).</li>
+    <li><strong>SSD ↔ placa-mãe:</strong> NVMe precisa de slot M.2; SATA usa cabo + energia.</li>
+  </ul>
+  <div class="box box-tip">
+    <div class="box-title">💡 Ferramenta amiga</div>
+    <p>O site <strong>pcpartpicker.com</strong> monta sua lista de peças e <strong>avisa automaticamente incompatibilidades</strong>. Mesmo sem comprar por ele, use como checagem.</p>
+  </div>
+
+  <h2>11.4 Ordem lógica de montagem (desktop)</h2>
+  <ol>
+    <li>Encaixe o <strong>processador</strong> no soquete (atenção ao triângulo/marca de alinhamento — sem força!).</li>
+    <li>Instale os <strong>pentes de RAM</strong> (trava dos dois lados faz "clique").</li>
+    <li>Instale o <strong>SSD M.2</strong> (se houver).</li>
+    <li>Fixe o <strong>cooler</strong> do processador (com pasta térmica, se não vier pré-aplicada).</li>
+    <li>Coloque a <strong>placa-mãe no gabinete</strong> (parafusos nos espaçadores certos).</li>
+    <li>Instale a <strong>fonte</strong> e passe os cabos (energia da placa 24 pinos, CPU 8 pinos, SATA, painel frontal).</li>
+    <li>Encaixe a <strong>placa de vídeo</strong> no slot PCIe e conecte os cabos de energia dela.</li>
+    <li><strong>Ligue e teste</strong>: entrou na BIOS/UEFI? Reconheceu tudo? Então instale o sistema operacional (Módulo 7!) via pendrive bootável.</li>
+  </ol>
+  <div class="box box-warn">
+    <div class="box-title">⚠️ Segurança na montagem</div>
+    <p>Trabalhe com o computador <strong>desligado da tomada</strong>, em superfície seca, tocando antes em metal aterrado para descarregar a <strong>eletricidade estática</strong> (que pode matar peças). Nunca force encaixes — tudo tem um lado certo.</p>
+  </div>
+
+  <h2>11.5 E se for notebook? Checklist de compra</h2>
+  <ol>
+    <li><strong>CPU:</strong> Core i5/Ryzen 5 ou melhor (fuja de Celeron/Athlon se puder).</li>
+    <li><strong>RAM:</strong> 8 GB mínimo; verifique se é <strong>expansível</strong>.</li>
+    <li><strong>Armazenamento:</strong> SSD sempre — confirme na ficha ("SSD" e não "HD").</li>
+    <li><strong>Tela:</strong> Full HD (1920×1080); evite telas "HD" (1366×768) em pleno 2026.</li>
+    <li><strong>Teclado ABNT2</strong> (com Ç) se você digita muito.</li>
+    <li><strong>Bateria:</strong> procure reviews com o tempo real de uso.</li>
+    <li><strong>Portas:</strong> tem HDMI? USB-C? Leitor de cartão? Importa para você?</li>
+  </ol>
+
+  <div class="box box-info">
+    <div class="box-title">ℹ️ Resumindo</div>
+    <p>Perfil de uso define a lista → lista equilibrada evita gargalo → <strong>soquete, tipo de RAM, potência da fonte e tamanho do gabinete</strong> são as checagens de compatibilidade → montagem em ordem lógica e sem força → notebook: i5/Ryzen 5, 8–16 GB, SSD, tela Full HD.</p>
+  </div>
+
+  <h2>🛠️ Atividade prática</h2>
+  <div class="card">
+    <ol>
+      <li>Escolha um perfil (estudo, jogos ou criação) e monte uma <strong>lista de compra completa</strong> no papel ou no PCPartPicker, com preços de lojas brasileiras.</li>
+      <li>Some o total. Depois, procure um notebook pronto na mesma faixa de preço e compare: qual entrega mais pelo seu perfil?</li>
+      <li>Assista a um vídeo de montagem de PC no YouTube e anote em que minuto o montador instala: CPU, RAM, fonte e GPU.</li>
+    </ol>
+  </div>
+
+  <h2>📝 Quiz do Módulo 11</h2>
+  <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
+  <div class="quiz" id="quiz" data-quiz='[
+    {"q":"O que é 'gargalo' (bottleneck) em um computador?","options":["Um tipo de vírus","Quando uma peça fraca limita o desempenho de todo o conjunto","Quando o PC superaquece","Um erro do Windows"],"answer":1,"explain":"O sistema é tão rápido quanto o elo mais fraco — ex.: CPU potente com 4 GB de RAM."},
+    {"q":"Ao escolher placa-mãe e processador, o que PRECISA ser igual/compatível?","options":["A cor das peças","O soquete (e o chipset suportar a geração da CPU)","O tamanho do cooler","A marca da fonte"],"answer":1,"explain":"CPU e placa-mãe só conversam se o soquete for o mesmo (ex.: AM5, LGA1700)."},
+    {"q":"Uma placa-mãe é DDR4. O que isso significa na prática?","options":["Que ela aceita pentes DDR4 e DDR5","Que só aceita pentes de memória DDR4","Que ela tem 4 slots","Que a fonte precisa ser de 400W"],"answer":1,"explain":"DDR4 e DDR5 têm encaixes diferentes: a placa aceita apenas um dos tipos."},
+    {"q":"Qual é a configuração mínima sensata para um notebook de estudo/trabalho em 2026?","options":["Celeron, 4 GB RAM, HD","Core i5/Ryzen 5, 8 GB RAM, SSD, tela Full HD","Qualquer um serve","Core i9, 64 GB, 4TB"],"answer":1,"explain":"i5/Ryzen 5 + 8 GB + SSD + Full HD é o equilíbrio custo-desempenho; menos que isso gera frustração."},
+    {"q":"Qual o primeiro passo lógico ao montar o PC fora do gabinete?","options":["Ligar na tomada para testar","Encaixar CPU, RAM e SSD M.2 na placa-mãe, depois o cooler","Passar todos os cabos da fonte","Instalar o Windows"],"answer":1,"explain":"Montar CPU/RAM/SSD/cooler com a placa fora do gabinete é mais fácil; depois ela vai para a caixa."}
+  ]'></div>
+  <div class="quiz-result" id="quiz-result"></div>
+
+  <div class="complete-row">
+    <button class="btn" id="btn-complete" data-module="11">✓ Concluir módulo 11</button>
+    <span class="complete-msg">Módulo concluído!</span>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="modulo-10.html"><span class="dir">← Anterior</span><span class="t">10 · Segurança e manutenção</span></a>
+    <a class="next" href="modulo-12.html"><span class="dir">Próximo módulo →</span><span class="t">12 · Energia e proteção elétrica</span></a>
+  </div>
+</main>
+
+<footer>Curso Fundamentos de TI · Módulo 11 de 16</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

@@ -1,3 +1,5 @@
+![Capa do curso Fundamentos de TI](assets/capa-curso.png)
+
 # 💻 Curso: Fundamentos de TI — Hardware e Software
 
 Curso interativo em HTML/CSS/JS puro, feito para **iniciantes totais** em tecnologia.

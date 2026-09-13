@@ -59,6 +59,11 @@ a:hover{text-decoration:underline}
 
 /* Conteúdo */
 .container{max-width:var(--maxw);margin:0 auto;padding:1.6rem 1.2rem 4rem}
+.hero-cover{
+  width:100%;display:block;border-radius:var(--radius);
+  border:1px solid var(--border);margin:.2rem 0 1.4rem;
+  box-shadow:0 10px 40px rgba(79,140,255,.15);
+}
 .page-head{margin-bottom:1.4rem}
 .tag{
   display:inline-block;font-size:.74rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;

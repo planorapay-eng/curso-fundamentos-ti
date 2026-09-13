@@ -57,9 +57,10 @@
   /* ---- Quiz ---- */
   function initQuiz() {
     var holder = document.getElementById('quiz');
-    if (!holder) return;
+    var src = document.getElementById('quiz-data');
+    if (!holder || !src) return;
     var data;
-    try { data = JSON.parse(holder.getAttribute('data-quiz')); }
+    try { data = JSON.parse(src.textContent); }
     catch (e) { return; }
 
     data.forEach(function (q, qi) {

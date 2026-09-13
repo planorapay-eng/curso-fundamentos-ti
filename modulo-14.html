@@ -126,13 +126,8 @@
 
   <h2>📝 Quiz do Módulo 14</h2>
   <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
-  <div class="quiz" id="quiz" data-quiz='[
-    {"q":"O que é um algoritmo?","options":["Um tipo de vírus de computador","Uma sequência finita e ordenada de passos que resolve um problema","Uma peça do processador","Um programa pago"],"answer":1,"explain":"Receita de bolo, instruções de montagem e programas de computador são todos algoritmos."},
-    {"q":"Quais são as três estruturas fundamentais da lógica de programação?","options":["Entrada, saída e impressão","Sequência, decisão e repetição","HTML, CSS e JavaScript","Soma, média e divisão"],"answer":1,"explain":"Todo programa combina passos em ordem (sequência), SE/SENÃO (decisão) e loops (repetição)."},
-    {"q":"Qual linguagem é a mais recomendada para um iniciante absoluto começar?","options":["C++","Assembly","Python","Java"],"answer":2,"explain":"Python tem sintaxe simples e legível, e é usada em dados, automação, IA e web."},
-    {"q":"O que o compilador/interpretador faz?","options":["Desenha a interface do programa","Traduz o código-fonte para código de máquina (0s e 1s)","Acelera a internet","Faz backup do código"],"answer":1,"explain":"A CPU só executa linguagem de máquina; o compilador/interpretador faz a ponte."},
-    {"q":"Dado: total ← 0; PARA n DE 1 ATÉ 3 FAÇA total ← total + n. O valor final de total é:","options":["3","5","6","0"],"answer":2,"explain":"Teste de mesa: 0+1=1, 1+2=3, 3+3=6."}
-  ]'></div>
+  <div class="quiz" id="quiz"></div>
+  <script type="application/json" id="quiz-data">[{"q": "O que é um algoritmo?", "options": ["Um tipo de vírus de computador", "Uma sequência finita e ordenada de passos que resolve um problema", "Uma peça do processador", "Um programa pago"], "answer": 1, "explain": "Receita de bolo, instruções de montagem e programas de computador são todos algoritmos."}, {"q": "Quais são as três estruturas fundamentais da lógica de programação?", "options": ["Entrada, saída e impressão", "Sequência, decisão e repetição", "HTML, CSS e JavaScript", "Soma, média e divisão"], "answer": 1, "explain": "Todo programa combina passos em ordem (sequência), SE/SENÃO (decisão) e loops (repetição)."}, {"q": "Qual linguagem é a mais recomendada para um iniciante absoluto começar?", "options": ["C++", "Assembly", "Python", "Java"], "answer": 2, "explain": "Python tem sintaxe simples e legível, e é usada em dados, automação, IA e web."}, {"q": "O que o compilador/interpretador faz?", "options": ["Desenha a interface do programa", "Traduz o código-fonte para código de máquina (0s e 1s)", "Acelera a internet", "Faz backup do código"], "answer": 1, "explain": "A CPU só executa linguagem de máquina; o compilador/interpretador faz a ponte."}, {"q": "Dado: total ← 0; PARA n DE 1 ATÉ 3 FAÇA total ← total + n. O valor final de total é:", "options": ["3", "5", "6", "0"], "answer": 2, "explain": "Teste de mesa: 0+1=1, 1+2=3, 3+3=6."}]</script>
   <div class="quiz-result" id="quiz-result"></div>
 
   <div class="complete-row">

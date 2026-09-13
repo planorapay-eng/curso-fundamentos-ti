@@ -119,13 +119,8 @@
 
   <h2>📝 Quiz do Módulo 1</h2>
   <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
-  <div class="quiz" id="quiz" data-quiz='[
-    {"q":"O que é hardware?","options":["Os programas instalados no computador","A parte física do computador, que podemos tocar","Os arquivos e fotos guardados no disco","A senha de acesso do usuário"],"answer":1,"explain":"Hardware é tudo que é físico: gabinete, teclado, monitor, peças internas, celular."},
-    {"q":"Qual das opções abaixo é um exemplo de software?","options":["Teclado","Monitor","Sistema Android","Pendrive"],"answer":2,"explain":"Android é um sistema operacional — um conjunto de programas, portanto software. Os demais são físicos."},
-    {"q":"Quantos bits formam 1 byte?","options":["2 bits","4 bits","8 bits","16 bits"],"answer":2,"explain":"1 byte = 8 bits. Um byte representa aproximadamente um caractere, como a letra A."},
-    {"q":"Qual unidade de medida representa MAIS dados?","options":["1 MB","1 KB","1 TB","1 GB"],"answer":2,"explain":"A ordem crescente é: byte < KB < MB < GB < TB. 1 TB equivale a cerca de 1.000 GB."},
-    {"q":"Um servidor é:","options":["A pessoa que atende no suporte técnico","Um computador potente que fica ligado atendendo outros computadores","O cabo que liga o computador à internet","Um tipo de monitor especial"],"answer":1,"explain":"Servidores hospedam sites, apps e arquivos. Quando você usa a nuvem, está acessando servidores."}
-  ]'></div>
+  <div class="quiz" id="quiz"></div>
+  <script type="application/json" id="quiz-data">[{"q": "O que é hardware?", "options": ["Os programas instalados no computador", "A parte física do computador, que podemos tocar", "Os arquivos e fotos guardados no disco", "A senha de acesso do usuário"], "answer": 1, "explain": "Hardware é tudo que é físico: gabinete, teclado, monitor, peças internas, celular."}, {"q": "Qual das opções abaixo é um exemplo de software?", "options": ["Teclado", "Monitor", "Sistema Android", "Pendrive"], "answer": 2, "explain": "Android é um sistema operacional — um conjunto de programas, portanto software. Os demais são físicos."}, {"q": "Quantos bits formam 1 byte?", "options": ["2 bits", "4 bits", "8 bits", "16 bits"], "answer": 2, "explain": "1 byte = 8 bits. Um byte representa aproximadamente um caractere, como a letra A."}, {"q": "Qual unidade de medida representa MAIS dados?", "options": ["1 MB", "1 KB", "1 TB", "1 GB"], "answer": 2, "explain": "A ordem crescente é: byte < KB < MB < GB < TB. 1 TB equivale a cerca de 1.000 GB."}, {"q": "Um servidor é:", "options": ["A pessoa que atende no suporte técnico", "Um computador potente que fica ligado atendendo outros computadores", "O cabo que liga o computador à internet", "Um tipo de monitor especial"], "answer": 1, "explain": "Servidores hospedam sites, apps e arquivos. Quando você usa a nuvem, está acessando servidores."}]</script>
   <div class="quiz-result" id="quiz-result"></div>
 
   <div class="complete-row">

@@ -113,13 +113,8 @@
 
   <h2>📝 Quiz do Módulo 5</h2>
   <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
-  <div class="quiz" id="quiz" data-quiz='[
-    {"q":"O teclado é um periférico de:","options":["Saída","Entrada","Armazenamento","Processamento"],"answer":1,"explain":"Teclado envia dados PARA o computador, logo é periférico de entrada."},
-    {"q":"Qual porta transmite imagem E som para uma TV?","options":["USB-A","RJ-45","HDMI","P2"],"answer":2,"explain":"HDMI leva vídeo e áudio juntos. P2 leva só áudio; RJ-45 é rede; USB-A é dados/energia."},
-    {"q":"O USB-C se destaca porque:","options":["É o mais antigo de todos","É reversível e pode transmitir dados, vídeo e energia","Só existe em impressoras","É exclusivo da Apple"],"answer":1,"explain":"O formato oval encaixa dos dois lados e um único cabo pode fazer tudo, inclusive carregar notebooks."},
-    {"q":"A resolução Full HD corresponde a:","options":["1920×1080 pixels","3840×2160 pixels","800×600 pixels","2560×1440 pixels"],"answer":0,"explain":"Full HD = 1920×1080. 2560×1440 é 2K/QHD e 3840×2160 é 4K."},
-    {"q":"Bluetooth é mais usado para:","options":["Conectar o computador à internet","Conectar acessórios de curto alcance como fones, mouses e teclados","Imprimir documentos","Ligar o monitor na energia"],"answer":1,"explain":"Bluetooth = acessórios pessoais de curto alcance. Internet é papel do Wi-Fi/cabo de rede."}
-  ]'></div>
+  <div class="quiz" id="quiz"></div>
+  <script type="application/json" id="quiz-data">[{"q": "O teclado é um periférico de:", "options": ["Saída", "Entrada", "Armazenamento", "Processamento"], "answer": 1, "explain": "Teclado envia dados PARA o computador, logo é periférico de entrada."}, {"q": "Qual porta transmite imagem E som para uma TV?", "options": ["USB-A", "RJ-45", "HDMI", "P2"], "answer": 2, "explain": "HDMI leva vídeo e áudio juntos. P2 leva só áudio; RJ-45 é rede; USB-A é dados/energia."}, {"q": "O USB-C se destaca porque:", "options": ["É o mais antigo de todos", "É reversível e pode transmitir dados, vídeo e energia", "Só existe em impressoras", "É exclusivo da Apple"], "answer": 1, "explain": "O formato oval encaixa dos dois lados e um único cabo pode fazer tudo, inclusive carregar notebooks."}, {"q": "A resolução Full HD corresponde a:", "options": ["1920×1080 pixels", "3840×2160 pixels", "800×600 pixels", "2560×1440 pixels"], "answer": 0, "explain": "Full HD = 1920×1080. 2560×1440 é 2K/QHD e 3840×2160 é 4K."}, {"q": "Bluetooth é mais usado para:", "options": ["Conectar o computador à internet", "Conectar acessórios de curto alcance como fones, mouses e teclados", "Imprimir documentos", "Ligar o monitor na energia"], "answer": 1, "explain": "Bluetooth = acessórios pessoais de curto alcance. Internet é papel do Wi-Fi/cabo de rede."}]</script>
   <div class="quiz-result" id="quiz-result"></div>
 
   <div class="complete-row">

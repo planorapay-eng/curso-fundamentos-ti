@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 2 — Por dentro do computador | Fundamentos de TI</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo">💻</span> Fundamentos de TI</a>
+    <nav class="topnav">
+      <a href="index.html">Início</a>
+      <a href="modulo-01.html">← Módulo 1</a>
+      <a href="modulo-02.html" class="active">Módulo 2</a>
+      <a href="modulo-03.html">Módulo 3 →</a>
+    </nav>
+  </div>
+  <div class="course-progress">
+    <span id="progress-label">0/10 módulos concluídos</span>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="tag">Módulo 2 · 3 horas</span>
+    <h1>Por dentro do computador: os componentes principais</h1>
+    <p class="subtitle">Vamos abrir a tampa (de mentirinha) e conhecer cada peça e sua função.</p>
+  </div>
+
+  <div class="objectives">
+    <h2>🎯 Objetivos de aprendizagem</h2>
+    <ul>
+      <li>Nomear os componentes internos de um computador e explicar a função de cada um.</li>
+      <li>Entender o papel da placa-mãe, da fonte de alimentação e do gabinete.</li>
+      <li>Compreender o modelo básico "entrada → processamento → saída → armazenamento".</li>
+      <li>Diferenciar desktop de notebook por dentro.</li>
+    </ul>
+  </div>
+
+  <h2>2.1 O mapa geral: entrada, processamento, saída</h2>
+  <p>Todo computador, do mais simples ao mais potente, segue o mesmo fluxo de trabalho:</p>
+  <ol>
+    <li><strong>Entrada</strong> — você dá informações (digita, clica, fala, filma com a webcam).</li>
+    <li><strong>Processamento</strong> — o computador "pensa" e calcula usando o processador e a memória.</li>
+    <li><strong>Saída</strong> — ele mostra o resultado (tela, som, impressão).</li>
+    <li><strong>Armazenamento</strong> — ele guarda o que importa para usar depois (disco, nuvem).</li>
+  </ol>
+  <div class="analogy">
+    <div class="box-title">🧠 Analogia da cozinha (continuação do Módulo 1)</div>
+    <p><strong>Entrada</strong> = o pedido do cliente chega. <strong>Processamento</strong> = o chef (CPU) cozinha usando a bancada (RAM) e os ingredientes da despensa (disco). <strong>Saída</strong> = o prato é servido. <strong>Armazenamento</strong> = a receita é guardada para a próxima.</p>
+  </div>
+
+  <h2>2.2 Placa-mãe: a espinha dorsal</h2>
+  <p>A <strong>placa-mãe</strong> (motherboard) é uma placa de circuito grande onde <strong>todas as outras peças se conectam</strong>: processador, memória, armazenamento, placa de vídeo, fonte... Ela é cheia de trilhas (como estradas) que fazem as peças conversarem entre si.</p>
+  <ul>
+    <li><strong>Soquete</strong> — o encaixe do processador.</li>
+    <li><strong>Slots de memória</strong> — onde os pentes de RAM são encaixados.</li>
+    <li><strong>Slots de expansão (PCIe)</strong> — para placa de vídeo, placa de rede etc.</li>
+    <li><strong>Conectores SATA/M.2</strong> — para discos e SSDs.</li>
+    <li><strong>Chipset + BIOS/UEFI</strong> — o "mini-software de fábrica" que faz o computador ligar e reconhecer as peças (voltaremos a ele no Módulo 6).</li>
+    <li><strong>Painel traseiro</strong> — as portas USB, rede, áudio e vídeo que ficam à vista atrás do gabinete.</li>
+  </ul>
+
+  <h2>2.3 Fonte de alimentação: a energia</h2>
+  <p>A tomada entrega corrente <strong>alternada (AC)</strong> em 127V ou 220V, mas as peças do computador funcionam com corrente <strong>contínua (DC)</strong> em voltagens baixinhas (3,3V, 5V e 12V). A <strong>fonte de alimentação</strong> (PSU) faz essa conversão e distribui energia para tudo.</p>
+  <div class="box box-warn">
+    <div class="box-title">⚠️ Atenção</div>
+    <p>Fonte de má qualidade é uma das maiores causas de queima de componentes. E <strong>nunca</strong> abra uma fonte: os capacitores guardam energia perigosa mesmo desligada. Em notebooks, o "carregador" cumpre papel parecido.</p>
+  </div>
+
+  <h2>2.4 As peças que processam e guardam (visão geral)</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Componente</th><th>Função em uma frase</th><th>Detalhes em</th></tr>
+    <tr><td><strong>Processador (CPU)</strong></td><td>O "cérebro": executa todos os cálculos e comandos</td><td>Módulo 3</td></tr>
+    <tr><td><strong>Memória RAM</strong></td><td>A "bancada de trabalho": guarda o que está em uso agora</td><td>Módulo 3</td></tr>
+    <tr><td><strong>Armazenamento (HD/SSD)</strong></td><td>A "despensa": guarda tudo de forma permanente</td><td>Módulo 4</td></tr>
+    <tr><td><strong>Placa de vídeo (GPU)</strong></td><td>Desenha as imagens que aparecem no monitor</td><td>A seguir (2.5)</td></tr>
+    <tr><td><strong>Placa de rede / Wi-Fi</strong></td><td>Conecta o computador à internet e a outros dispositivos</td><td>Módulo 9</td></tr>
+  </table>
+  </div>
+
+  <h3>2.5 Placa de vídeo (GPU)</h3>
+  <p>Todo computador precisa gerar imagens para a tela. Isso pode ser feito de duas formas:</p>
+  <ul>
+    <li><strong>Vídeo integrado</strong> — um chip de vídeo vem embutido no processador ou na placa-mãe. É suficiente para navegar, estudar, assistir vídeos e trabalhar com documentos. É o que a maioria das pessoas tem.</li>
+    <li><strong>Placa de vídeo dedicada</strong> — uma placa separada, muito mais potente, necessária para jogos pesados, edição de vídeo profissional e inteligência artificial.</li>
+  </ul>
+
+  <h2>2.6 Gabinete e refrigeração</h2>
+  <p>O <strong>gabinete</strong> (torre) protege e organiza as peças. Dentro dele circula ar puxado por <strong>ventoinhas (coolers)</strong>, porque o calor é o grande inimigo da eletrônica. O processador tem seu próprio cooler, com um dissipador de metal e, às vezes, refrigeração líquida.</p>
+  <div class="box box-tip">
+    <div class="box-title">💡 Dica prática</div>
+    <p>Computador lento que "esquenta e desliga sozinho"? Muitas vezes é sujeira bloqueando a ventilação ou pasta térmica ressecada. Você verá isso no Módulo 10.</p>
+  </div>
+
+  <h2>2.7 E no notebook e no celular?</h2>
+  <p>As mesmas peças existem — só que <strong>miniaturizadas e soldadas</strong> em uma única placa, para caber em pouco espaço e gastar pouca bateria. Em notebooks e celulares:</p>
+  <ul>
+    <li>Muitos componentes <strong>não podem ser trocados ou ampliados</strong> (por isso a escolha na compra importa tanto).</li>
+    <li>Memória RAM e armazenamento às vezes são expansíveis em notebooks — vale verificar o modelo antes de comprar.</li>
+    <li>A bateria substitui a fonte como alimentação principal.</li>
+  </ul>
+
+  <div class="box box-info">
+    <div class="box-title">ℹ️ Resumindo</div>
+    <p>A <strong>placa-mãe</strong> conecta tudo; a <strong>fonte</strong> fornece energia; o <strong>processador</strong> calcula; a <strong>RAM</strong> segura o que está em uso; o <strong>HD/SSD</strong> guarda para sempre; a <strong>GPU</strong> gera imagens; o <strong>gabinete e os coolers</strong> protegem e refrigeram. Notebook e celular têm as mesmas peças, em versão compacta.</p>
+  </div>
+
+  <h2>🛠️ Atividade prática</h2>
+  <div class="card">
+    <ol>
+      <li>Se tiver um desktop em casa (com garantia vencida e desligado da tomada!), você pode abrir a tampa lateral <strong>apenas para olhar</strong> — sem tocar em nada — e identificar: placa-mãe, fonte, coolers e cabos.</li>
+      <li>Se não puder abrir, procure no YouTube vídeos como "como montar um PC passo a passo" e tente nomear cada peça que aparecer.</li>
+      <li>No seu celular, vá em Configurações → Sobre o telefone e anote: processador, memória RAM e armazenamento. Você acabou de ler a "ficha técnica" do hardware!</li>
+    </ol>
+  </div>
+
+  <h2>📝 Quiz do Módulo 2</h2>
+  <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
+  <div class="quiz" id="quiz" data-quiz='[
+    {"q":"Qual componente conecta todas as outras peças do computador e faz elas conversarem entre si?","options":["A fonte de alimentação","A placa-mãe","O gabinete","O cooler"],"answer":1,"explain":"A placa-mãe é a espinha dorsal: processador, RAM, discos e placas se encaixam nela."},
+    {"q":"Para que serve a fonte de alimentação?","options":["Para guardar arquivos","Para converter a energia da tomada nas voltagens que as peças usam","Para resfriar o processador","Para gerar as imagens da tela"],"answer":1,"explain":"A fonte converte a corrente alternada 127/220V da tomada em corrente contínua de 3,3V, 5V e 12V."},
+    {"q":"No fluxo básico de funcionamento, o que vem depois da ENTRADA de dados?","options":["Saída","Armazenamento","Processamento","Impressão"],"answer":2,"explain":"O fluxo é: entrada → processamento → saída, com armazenamento ao longo do caminho."},
+    {"q":"Qual a diferença entre vídeo integrado e placa de vídeo dedicada?","options":["Não há diferença","O integrado vem embutido no processador/placa-mãe e atende usos comuns; a dedicada é separada e mais potente","A dedicada só existe em celulares","O integrado é sempre mais potente"],"answer":1,"explain":"Vídeo integrado basta para estudo e trabalho comum; dedicada é para jogos pesados, edição e IA."},
+    {"q":"Por que os coolers (ventoinhas) são importantes?","options":["Porque deixam o computador mais rápido automaticamente","Porque o calor excessivo danifica e trava os componentes","Porque geram energia para a placa-mãe","Porque aumentam o armazenamento"],"answer":1,"explain":"Calor é inimigo da eletrônica: causa travamentos e reduz a vida útil das peças."}
+  ]'></div>
+  <div class="quiz-result" id="quiz-result"></div>
+
+  <div class="complete-row">
+    <button class="btn" id="btn-complete" data-module="2">✓ Concluir módulo 2</button>
+    <span class="complete-msg">Módulo concluído!</span>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="modulo-01.html"><span class="dir">← Anterior</span><span class="t">1 · Bem-vindo ao mundo da TI</span></a>
+    <a class="next" href="modulo-03.html"><span class="dir">Próximo módulo →</span><span class="t">3 · Processador e memória</span></a>
+  </div>
+</main>
+
+<footer>Curso Fundamentos de TI · Módulo 2 de 10</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 8 — Arquivos e pastas | Fundamentos de TI</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo">💻</span> Fundamentos de TI</a>
+    <nav class="topnav">
+      <a href="index.html">Início</a>
+      <a href="modulo-07.html">← Módulo 7</a>
+      <a href="modulo-08.html" class="active">Módulo 8</a>
+      <a href="modulo-09.html">Módulo 9 →</a>
+    </nav>
+  </div>
+  <div class="course-progress">
+    <span id="progress-label">0/10 módulos concluídos</span>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="tag">Módulo 8 · 3 horas</span>
+    <h1>Arquivos e pastas: organização, formatos e boas práticas</h1>
+    <p class="subtitle">Nunca mais perca um documento importante nem fique sem saber como abrir um arquivo.</p>
+  </div>
+
+  <div class="objectives">
+    <h2>🎯 Objetivos de aprendizagem</h2>
+    <ul>
+      <li>Entender o que são arquivos, pastas e caminhos (paths).</li>
+      <li>Reconhecer as extensões e formatos mais comuns do dia a dia.</li>
+      <li>Realizar operações essenciais: criar, renomear, copiar, mover, excluir, compactar.</li>
+      <li>Montar um sistema pessoal de organização de arquivos.</li>
+    </ul>
+  </div>
+
+  <h2>8.1 Arquivo, pasta e caminho</h2>
+  <ul>
+    <li><strong>Arquivo</strong> — qualquer conteúdo guardado com um nome: documento, foto, música, vídeo, programa.</li>
+    <li><strong>Pasta (diretório)</strong> — uma "gaveta" que organiza arquivos e outras pastas (subpastas).</li>
+    <li><strong>Caminho (path)</strong> — o endereço completo do arquivo. Exemplo no Windows: <code>C:\Usuários\Maria\Documentos\curso\notas.txt</code>. No Linux/Mac: <code>/home/maria/documentos/notas.txt</code>.</li>
+  </ul>
+  <p>Tudo que o computador guarda está em algum lugar do armazenamento (Módulo 4). Saber <strong>onde</strong> está cada coisa é metade da organização digital.</p>
+
+  <h2>8.2 Extensões: o sobrenome do arquivo</h2>
+  <p>A <strong>extensão</strong> são as letras depois do ponto no nome do arquivo (<code>foto.jpg</code> → extensão <code>.jpg</code>). Ela diz ao sistema <strong>que tipo de arquivo é</strong> e <strong>qual programa deve abri-lo</strong>.</p>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Categoria</th><th>Extensões comuns</th><th>Abrem com</th></tr>
+    <tr><td>Documentos de texto</td><td>.docx, .pdf, .txt, .odt</td><td>Word, LibreOffice, leitores de PDF, Bloco de Notas</td></tr>
+    <tr><td>Planilhas</td><td>.xlsx, .csv, .ods</td><td>Excel, LibreOffice Calc, Google Sheets</td></tr>
+    <tr><td>Apresentações</td><td>.pptx, .odp</td><td>PowerPoint, LibreOffice Impress</td></tr>
+    <tr><td>Imagens</td><td>.jpg, .png, .gif, .webp, .svg</td><td>Visualizador de fotos, navegadores</td></tr>
+    <tr><td>Áudio</td><td>.mp3, .wav, .ogg, .m4a</td><td>Players de música</td></tr>
+    <tr><td>Vídeo</td><td>.mp4, .mkv, .avi, .mov</td><td>Players de vídeo (VLC abre quase tudo)</td></tr>
+    <tr><td>Compactados</td><td>.zip, .rar, .7z</td><td>Windows (zip nativo), WinRAR, 7-Zip</td></tr>
+    <tr><td>Programas (Windows)</td><td>.exe, .msi</td><td>Instaladores — cuidado redobrado (Módulo 10!)</td></tr>
+  </table>
+  </div>
+  <div class="box box-warn">
+    <div class="box-title">⚠️ Renomear não converte!</div>
+    <p>Mudar <code>video.mp4</code> para <code>video.mp3</code> <strong>não transforma</strong> vídeo em música — só confunde o sistema. Conversão exige um programa conversor. E desconfie de arquivos com <strong>extensão dupla</strong>: <code>boleto.pdf.exe</code> é golpe clássico (vale a extensão final!).</p>
+  </div>
+  <div class="box box-tip">
+    <div class="box-title">💡 Veja as extensões</div>
+    <p>Por padrão o Windows esconde as extensões conhecidas. Ative: Explorador de Arquivos → Exibir → Mostrar → <strong>Extensões de nomes de arquivos</strong>. Você passa a enxergar o "sobrenome real" de tudo.</p>
+  </div>
+
+  <h2>8.3 Operações essenciais</h2>
+  <ul>
+    <li><strong>Criar pasta:</strong> botão direito → Novo → Pasta.</li>
+    <li><strong>Renomear:</strong> botão direito → Renomear, ou tecla <code>F2</code>.</li>
+    <li><strong>Copiar x Recortar:</strong> <code>Ctrl+C</code> duplica, <code>Ctrl+X</code> move; <code>Ctrl+V</code> cola. (No Mac: <code>Cmd+C/X/V</code>.)</li>
+    <li><strong>Excluir:</strong> tecla <code>Delete</code> manda para a <strong>Lixeira</strong> (recuperável). <code>Shift+Delete</code> apaga direto (sem volta, na prática).</li>
+    <li><strong>Compactar (zipar):</strong> botão direito → Enviar para → Pasta compactada. Junta vários arquivos em um só, menor — ideal para e-mail e WhatsApp.</li>
+    <li><strong>Buscar:</strong> use a barra de pesquisa do Explorador de Arquivos; no Windows, <code>Win + S</code> busca no sistema todo.</li>
+  </ul>
+
+  <h2>8.4 Como se organizar (método simples que funciona)</h2>
+  <div class="card">
+    <ol>
+      <li><strong>Nomes claros:</strong> <code>2026-09-13 contrato-aluguel.pdf</code> é melhor que <code>documento1.pdf</code>. Datas no formato AAAA-MM-DD se ordenam sozinhas!</li>
+      <li><strong>Poucas pastas, bem pensadas:</strong> ex. <code>Documentos</code>, <code>Trabalho</code>, <code>Estudos</code>, <code>Fotos</code>, <code>Financeiro</code>, <code>Pessoal</code>. Evite 30 pastas na área de trabalho.</li>
+      <li><strong>Área de trabalho não é armário:</strong> use-a como mesa temporária; guarde os arquivos no lugar certo no fim do dia.</li>
+      <li><strong>Uma casa para cada coisa:</strong> se você precisa "pensar" onde salvar, sua estrutura está complexa demais.</li>
+      <li><strong>Backup regular:</strong> pastas importantes sincronizadas na nuvem + cópia em HD externo (detalhes no Módulo 10).</li>
+    </ol>
+  </div>
+
+  <h2>8.5 Arquivos na nuvem e no celular</h2>
+  <ul>
+    <li>No celular, os apps <strong>Arquivos (iPhone)</strong> e <strong>Meus Arquivos/Gerenciador (Android)</strong> mostram Downloads, documentos e o conteúdo da nuvem.</li>
+    <li>Fotos do celular podem subir automaticamente para <strong>Google Fotos</strong> ou <strong>iCloud</strong> — ative isso e nunca mais perca fotos ao trocar de aparelho.</li>
+    <li>Downloads pelo WhatsApp ficam na pasta <code>Downloads</code> ou <code>WhatsApp/Media</code>.</li>
+  </ul>
+
+  <div class="box box-info">
+    <div class="box-title">ℹ️ Resumindo</div>
+    <p><strong>Arquivo</strong> = conteúdo com nome; <strong>pasta</strong> = organização; <strong>caminho</strong> = endereço. A <strong>extensão</strong> define o tipo e o programa que abre. Renomear não converte; extensão dupla é sinal de golpe. Domine copiar/colar/recortar/compactar/buscar e crie um sistema simples de pastas com nomes datados.</p>
+  </div>
+
+  <h2>🛠️ Atividade prática</h2>
+  <div class="card">
+    <ol>
+      <li>Crie a estrutura: pasta <code>Curso-TI</code> e, dentro dela, as pastas <code>anotacoes</code>, <code>exercicios</code> e <code>arquivos-baixados</code>.</li>
+      <li>Crie um arquivo de texto chamado <code>2026-09-13 minhas-anotacoes.txt</code> dentro de <code>anotacoes</code> e escreva 3 coisas que aprendeu até aqui.</li>
+      <li>Compacte a pasta <code>Curso-TI</code> em um .zip, mova o zip para a área de trabalho e depois descompacte-o em <code>arquivos-baixados</code>.</li>
+      <li>Ative a exibição de extensões no seu computador e olhe os arquivos da sua área de trabalho: você consegue dizer o tipo de cada um?</li>
+    </ol>
+  </div>
+
+  <h2>📝 Quiz do Módulo 8</h2>
+  <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
+  <div class="quiz" id="quiz" data-quiz='[
+    {"q":"Para que serve a extensão de um arquivo (ex.: .jpg, .docx)?","options":["Para deixar o arquivo menor","Para indicar o tipo do arquivo e qual programa deve abri-lo","Para proteger o arquivo com senha","Para mostrar a data de criação"],"answer":1,"explain":"A extensão é o sobrenome do arquivo: diz o formato e o programa associado."},
+    {"q":"Você recebe um arquivo chamado 'boleto.pdf.exe'. O que fazer?","options":["Abrir sem medo, é um PDF","Desconfiar: a extensão real é .exe (programa executável) — pode ser golpe","Renomear para .pdf e abrir","Compactar em .zip para ficar seguro"],"answer":1,"explain":"Vale a ÚLTIMA extensão. .exe é programa executável; golpistas usam extensão dupla para enganar."},
+    {"q":"Renomear um arquivo de video.mp4 para video.mp3 faz o quê?","options":["Converte o vídeo em áudio","Não converte nada; apenas troca o nome e pode impedir a abertura correta","Aumenta a qualidade","Apaga o vídeo"],"answer":1,"explain":"Renomear não converte formatos. Conversão exige um programa conversor adequado."},
+    {"q":"Qual atalho COPIA o arquivo selecionado (mantendo o original)?","options":["Ctrl + X","Ctrl + C","Ctrl + V","Delete"],"answer":1,"explain":"Ctrl+C copia, Ctrl+X recorta (move), Ctrl+V cola, Delete manda para a lixeira."},
+    {"q":"Qual nome de arquivo é mais organizado para achar depois?","options":["documento final final2.pdf","aaa.pdf","2026-09-13 contrato-aluguel.pdf","sem título (3).pdf"],"answer":2,"explain":"Data no início (AAAA-MM-DD) + descrição clara = arquivo fácil de ordenar e encontrar."}
+  ]'></div>
+  <div class="quiz-result" id="quiz-result"></div>
+
+  <div class="complete-row">
+    <button class="btn" id="btn-complete" data-module="8">✓ Concluir módulo 8</button>
+    <span class="complete-msg">Módulo concluído!</span>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="modulo-07.html"><span class="dir">← Anterior</span><span class="t">7 · Windows, Linux e macOS</span></a>
+    <a class="next" href="modulo-09.html"><span class="dir">Próximo módulo →</span><span class="t">9 · Redes e internet</span></a>
+  </div>
+</main>
+
+<footer>Curso Fundamentos de TI · Módulo 8 de 10</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

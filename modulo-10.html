@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 10 — Segurança e manutenção | Fundamentos de TI</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo">💻</span> Fundamentos de TI</a>
+    <nav class="topnav">
+      <a href="index.html">Início</a>
+      <a href="modulo-09.html">← Módulo 9</a>
+      <a href="modulo-10.html" class="active">Módulo 10</a>
+    </nav>
+  </div>
+  <div class="course-progress">
+    <span id="progress-label">0/10 módulos concluídos</span>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="tag">Módulo 10 · 4 horas</span>
+    <h1>Segurança, manutenção e projeto final</h1>
+    <p class="subtitle">Proteja seus dados e seus aparelhos — e feche o curso aplicando tudo que aprendeu.</p>
+  </div>
+
+  <div class="objectives">
+    <h2>🎯 Objetivos de aprendizagem</h2>
+    <ul>
+      <li>Criar e gerenciar senhas fortes e usar autenticação em duas etapas.</li>
+      <li>Reconhecer golpes: phishing, falso suporte, boletos falsos, arquivos .exe disfarçados.</li>
+      <li>Entender vírus/malware e como se proteger com boas práticas + antivírus.</li>
+      <li>Fazer backup com a regra 3-2-1.</li>
+      <li>Executar manutenção básica: atualizações, limpeza física e de disco.</li>
+      <li>Concluir o projeto final do curso.</li>
+    </ul>
+  </div>
+
+  <h2>10.1 Senhas: a chave da sua vida digital</h2>
+  <p>Senha fraca é a porta de entrada nº 1 para invasões. Regras de ouro:</p>
+  <ul>
+    <li><strong>Tamanho vence complexidade:</strong> uma <strong>frase-senha</strong> de 12+ caracteres ("meu-cachorro-come-3-pizzas!") é forte E fácil de lembrar.</li>
+    <li><strong>Nunca repita</strong> a mesma senha em sites diferentes. Se um vazar, todos caem.</li>
+    <li>Evite: datas de nascimento, "123456", nome de filho/pet, "senha".</li>
+    <li>Use um <strong>gerenciador de senhas</strong>: o do Google (Android/Chrome), iCloud Chaves (Apple), Bitwarden ou KeePass (gratuitos). Ele cria e guarda senhas fortes para você — você só memoriza UMA, a do gerenciador.</li>
+  </ul>
+  <div class="box box-tip">
+    <div class="box-title">💡 Ative a verificação em duas etapas (2FA)</div>
+    <p>Senha + segundo fator (código por app, SMS ou chave física). Mesmo que descubram sua senha, não entram. Ative pelo menos em: <strong>e-mail principal, banco, WhatsApp e redes sociais</strong>. No WhatsApp, ative também o <strong>PIN de confirmação</strong> (Configurações → Conta) para evitar clonagem.</p>
+  </div>
+
+  <h2>10.2 Golpes mais comuns no Brasil</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Golpe</th><th>Como funciona</th><th>Como se defender</th></tr>
+    <tr><td><strong>Phishing</strong></td><td>Falso e-mail/SMS/site de banco, Correios ou loja pedindo dados ou pagamento de "taxa"</td><td>Nunca clique em links de mensagens; acesse o site oficial digitando você mesmo; confira o endereço e o cadeado HTTPS</td></tr>
+    <tr><td><strong>WhatsApp clonado / "novo número"</strong></td><td>"Oi mãe, troquei de número, me faz um PIX?"</td><td>Ligue por vídeo/voz para confirmar; combine uma palavra-secreta com a família; ative o PIN do WhatsApp</td></tr>
+    <tr><td><strong>Falso suporte/antivírus</strong></td><td>Pop-up: "Seu PC está infectado! Ligue já" ou técnico remoto pedindo acesso</td><td>Feche a janela; jamais dê acesso remoto a desconhecidos; banco/microsoft nunca ligam pedindo senha</td></tr>
+    <tr><td><strong>Boleto/PIX falso</strong></td><td>Cobrança de taxa de entrega, multa ou assinatura que você não fez</td><td>Confira o recebedor do PIX ANTES de confirmar; desconfie de urgência ("pague em 1h ou será bloqueado")</td></tr>
+    <tr><td><strong>Arquivo malicioso</strong></td><td><code>curriculo.pdf.exe</code>, "foto.zip" com senha no WhatsApp</td><td>Vale a última extensão (Módulo 8!); não execute .exe/.apk de origem desconhecida</td></tr>
+  </table>
+  </div>
+  <p>O padrão de todo golpe: <strong>urgência + emoção + um clique/PIX</strong>. Respirou, desconfiou, conferiu por outro canal = golpe neutralizado.</p>
+
+  <h2>10.3 Malware (vírus e cia.)</h2>
+  <ul>
+    <li><strong>Vírus/malware</strong> — termo geral para programas maliciosos.</li>
+    <li><strong>Ransomware</strong> — sequestra seus arquivos (criptografa) e pede resgate. A única defesa real é <strong>backup</strong>.</li>
+    <li><strong>Spyware/keylogger</strong> — espiona o que você digita (senhas!).</li>
+    <li><strong>Adware</strong> — entope o aparelho de propaganda; geralmente veio junto com programa baixado fora da loja oficial.</li>
+  </ul>
+  <p><strong>Proteção:</strong> mantenha o sistema e apps <strong>atualizados</strong> (atualizações corrigem falhas de segurança), baixe programas apenas de <strong>fontes oficiais</strong>, use o <strong>Windows Defender</strong> (já incluso e suficiente para uso doméstico — não precisa comprar antivírus) e desconfie de anexos e links.</p>
+
+  <h2>10.4 Backup: a regra 3-2-1</h2>
+  <div class="card">
+    <ul>
+      <li><strong>3</strong> cópias dos seus dados importantes (1 original + 2 backups);</li>
+      <li>em <strong>2</strong> mídias diferentes (ex.: nuvem + HD externo);</li>
+      <li><strong>1</strong> delas fora de casa (a nuvem resolve isso).</li>
+    </ul>
+    <p><strong>Na prática:</strong> fotos do celular com backup automático (Google Fotos/iCloud) + documentos em Google Drive/OneDrive + cópia mensal em HD externo. Celular roubado ou PC queimado deixa de ser tragédia e vira só inconveniência.</p>
+  </div>
+
+  <h2>10.5 Manutenção básica</h2>
+  <h3>Manutenção de software (todo mês)</h3>
+  <ul>
+    <li><strong>Atualize tudo:</strong> Windows Update / atualização do celular — não adie para sempre.</li>
+    <li><strong>Libere espaço:</strong> Configurações → Armazenamento; apague arquivos duplicados e apps que não usa.</li>
+    <li><strong>Limpe a inicialização:</strong> Gerenciador de Tarefas → Inicializar → desative o que não precisa abrir junto com o PC.</li>
+    <li><strong>Verifique ameaças:</strong> Windows Security → verificação rápida.</li>
+    <li>Reinicie o computador de vez em quando — resolve mais do que parece.</li>
+  </ul>
+  <h3>Manutenção de hardware (a cada 6–12 meses)</h3>
+  <ul>
+    <li><strong>Limpeza física:</strong> poeira é inimiga (Módulo 2). Desktop: ar comprimido nas ventoinhas, pincel macio, sempre desligado da tomada. Notebook/celular: pano levemente umedecido com álcool isopropílico na carcaça; nunca jogue líquido.</li>
+    <li><strong>Bateria do notebook:</strong> evite calor extremo; deixar na tomada o tempo todo não "vicia" baterias modernas, mas o calor sim.</li>
+    <li><strong>Sinais de HD morrendo:</strong> estalos, lentidão extrema, arquivos corrompidos → faça backup IMEDIATAMENTE e troque por um SSD.</li>
+  </ul>
+
+  <h2>🏆 Projeto final do curso</h2>
+  <div class="box box-info">
+    <div class="box-title">🎓 "Diagnóstico completo do meu dispositivo"</div>
+    <p>Escolha o computador (ou celular) que você mais usa e produza um <strong>relatório de 1 página</strong> com:</p>
+    <ol>
+      <li><strong>Ficha de hardware:</strong> processador (modelo, núcleos), RAM (total e em uso), armazenamento (tipo HD/SSD, total e livre), tela (resolução), portas que ele tem. <em>(Módulos 2–5)</em></li>
+      <li><strong>Ficha de software:</strong> sistema operacional e versão, 64 bits?, 3 aplicativos e 2 utilitários instalados. <em>(Módulos 6–7)</em></li>
+      <li><strong>Organização:</strong> print da sua nova estrutura de pastas com nomes datados. <em>(Módulo 8)</em></li>
+      <li><strong>Rede:</strong> IP local, velocidade medida (Mbps e convertida para MB/s), banda do Wi-Fi usada. <em>(Módulo 9)</em></li>
+      <li><strong>Segurança:</strong> checklist marcando: senhas fortes ✓, 2FA no e-mail/banco/WhatsApp ✓, sistema atualizado ✓, antivírus ativo ✓, backup 3-2-1 configurado ✓. <em>(Módulo 10)</em></li>
+      <li><strong>Conclusão:</strong> essa máquina atende para quê? Qual upgrade faria mais diferença nela (SSD? RAM?) e por quê?</li>
+    </ol>
+    <p>Salve como <code>AAAA-MM-DD projeto-final-fundamentos-ti.pdf</code> (ou .docx) na pasta do curso. <strong>Esse documento é a prova concreta de que você domina os fundamentos de TI.</strong> 🚀</p>
+  </div>
+
+  <h2>➡️ Próximos passos na sua jornada</h2>
+  <div class="card">
+    <ul>
+      <li>🔧 <strong>Suporte técnico / Help Desk:</strong> você já tem a base — procure cursos de montagem e manutenção e pratique em máquinas velhas.</li>
+      <li>🐧 <strong>Linux e redes:</strong> instale o Ubuntu/Mint (mesmo que em máquina virtual) e estude para certificações de entrada (ex.: CompTIA A+, Network+ ou equivalentes).</li>
+      <li>💻 <strong>Programação:</strong> comece com lógica e depois Python ou desenvolvimento web.</li>
+      <li>🔐 <strong>Segurança:</strong> depois de redes, é um caminho natural e muito valorizado.</li>
+    </ul>
+  </div>
+
+  <div class="box box-info">
+    <div class="box-title">ℹ️ Resumindo</div>
+    <p>Senhas longas + gerenciador + <strong>2FA</strong>. Golpe = urgência + emoção + clique: desconfie e confira por outro canal. Atualize tudo, baixe só do oficial, Defender já basta. Backup <strong>3-2-1</strong>. Limpeza física contra poeira, limpeza de software todo mês. E faça o projeto final!</p>
+  </div>
+
+  <h2>📝 Quiz do Módulo 10</h2>
+  <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
+  <div class="quiz" id="quiz" data-quiz='[
+    {"q":"Qual é a MELHOR prática de senha?","options":["Usar a mesma senha forte em todos os sites","Usar frase-senha longa, diferente por site, guardada em gerenciador + 2FA","Anotar todas as senhas em um papel na gaveta","Usar a data de nascimento com letras maiúsculas"],"answer":1,"explain":"Comprimento + unicidade + gerenciador + segundo fator (2FA) = padrão-ouro de segurança pessoal."},
+    {"q":"Você recebe: 'Oi pai, meu celular quebrou, esse é meu número novo, preciso de um PIX urgente'. O que fazer?","options":["Fazer o PIX rápido para ajudar","Ligar para o número ANTIGO do filho ou pedir videochamada antes de qualquer coisa","Responder pedindo a senha do banco","Ignorar e bloquear sem avisar ninguém"],"answer":1,"explain":"Golpe do 'novo número' é um dos mais comuns no Brasil. Sempre confirme por outro canal já conhecido."},
+    {"q":"Qual é a única proteção REAL contra ransomware que sequestra todos os seus arquivos?","options":["Antivírus pago mais caro","Ter backups atualizados (regra 3-2-1)","Trocar a senha","Formatar preventivamente todo mês"],"answer":1,"explain":"Antivírus ajuda a prevenir, mas se o ataque passar, só o backup permite recuperar sem pagar resgate."},
+    {"q":"Sobre antivírus no Windows 10/11 para uso doméstico:","options":["É obrigatório comprar um antivírus pago","O Windows Defender incluso, atualizado, é suficiente com boas práticas","Não precisa de nada","Antivírus deixa o PC mais rápido"],"answer":1,"explain":"O Defender é bom e gratuito; o que mais protege é atualização + download de fontes oficiais + desconfiança saudável."},
+    {"q":"Seu notebook está esquentando muito e com a ventoinha barulhenta. Causa mais provável?","options":["Excesso de memória RAM","Poeira bloqueando a ventilação / pasta térmica ressecada","Internet lenta","Monitor com resolução alta"],"answer":1,"explain":"Calor quase sempre é ventilação obstruída por poeira. Limpeza física periódica resolve na maioria dos casos."}
+  ]'></div>
+  <div class="quiz-result" id="quiz-result"></div>
+
+  <div class="complete-row">
+    <button class="btn" id="btn-complete" data-module="10">✓ Concluir módulo 10 (final!)</button>
+    <span class="complete-msg">Módulo concluído!</span>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="modulo-09.html"><span class="dir">← Anterior</span><span class="t">9 · Redes e internet</span></a>
+    <a class="next" href="index.html"><span class="dir">Fim do curso 🎉</span><span class="t">Voltar ao início</span></a>
+  </div>
+</main>
+
+<footer>Curso Fundamentos de TI · Módulo 10 de 10 · Parabéns por chegar até aqui!</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

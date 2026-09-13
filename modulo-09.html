@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 9 — Redes e internet | Fundamentos de TI</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo">💻</span> Fundamentos de TI</a>
+    <nav class="topnav">
+      <a href="index.html">Início</a>
+      <a href="modulo-08.html">← Módulo 8</a>
+      <a href="modulo-09.html" class="active">Módulo 9</a>
+      <a href="modulo-10.html">Módulo 10 →</a>
+    </nav>
+  </div>
+  <div class="course-progress">
+    <span id="progress-label">0/10 módulos concluídos</span>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="tag">Módulo 9 · 4 horas</span>
+    <h1>Redes e internet: como tudo se conecta</h1>
+    <p class="subtitle">Do Wi-Fi da sua casa até o outro lado do mundo — entenda o caminho que seus dados percorrem.</p>
+  </div>
+
+  <div class="objectives">
+    <h2>🎯 Objetivos de aprendizagem</h2>
+    <ul>
+      <li>Explicar o que é uma rede e seus componentes: roteador, modem, cabo e Wi-Fi.</li>
+      <li>Entender endereço IP e como os dispositivos se encontram na rede.</li>
+      <li>Descrever o que acontece quando você digita um site no navegador.</li>
+      <li>Diferenciar velocidade de download/upload, megabit e megabyte.</li>
+      <li>Entender o que realmente é "a nuvem".</li>
+    </ul>
+  </div>
+
+  <h2>9.1 O que é uma rede?</h2>
+  <p><strong>Rede</strong> é um conjunto de dispositivos conectados que trocam dados entre si. A menor rede é o seu celular conectado ao fone Bluetooth; a maior é a <strong>internet</strong>: uma "rede de redes" que liga bilhões de dispositivos no planeta.</p>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Tipo</th><th>Alcance</th><th>Exemplo</th></tr>
+    <tr><td><strong>PAN</strong> (pessoal)</td><td>~10 metros</td><td>Bluetooth: celular + fone + relógio</td></tr>
+    <tr><td><strong>LAN</strong> (local)</td><td>Casa, andar, prédio</td><td>Sua rede doméstica: roteador, celulares, TV, PC</td></tr>
+    <tr><td><strong>WAN</strong> (ampla)</td><td>Cidades, países, mundo</td><td>A internet</td></tr>
+  </table>
+  </div>
+
+  <h2>9.2 Os equipamentos da sua casa</h2>
+  <ul>
+    <li><strong>Modem / ONT</strong> — recebe o sinal da operadora (fibra, cabo) e converte em dados. Muitas vezes vem junto no mesmo aparelho do roteador.</li>
+    <li><strong>Roteador</strong> — o "carteiro" da sua rede local: distribui a internet para seus dispositivos (por cabo ou Wi-Fi), cria a rede doméstica e decide para onde vai cada pacote de dados.</li>
+    <li><strong>Cabo de rede (ethernet, RJ-45)</strong> — conexão com fio: mais estável, mais rápida e sem interferência. Ideal para TV, console e home office.</li>
+    <li><strong>Wi-Fi</strong> — a rede sem fio do roteador. Bandas: <strong>2,4 GHz</strong> (alcance maior, mais lenta, sofre interferência) e <strong>5 GHz</strong> (mais rápida, alcance menor). Wi-Fi 6 é o padrão atual mais eficiente.</li>
+    <li><strong>Repetidor/mesh</strong> — estendem o sinal para cantos da casa onde o Wi-Fi não chega.</li>
+  </ul>
+
+  <h2>9.3 Endereço IP: o "número da casa" de cada dispositivo</h2>
+  <p>Todo dispositivo em uma rede tem um <strong>endereço IP</strong>, um número que o identifica. Exemplo: <code>192.168.0.15</code>.</p>
+  <ul>
+    <li><strong>IP local (privado)</strong> — dentro da sua casa: o roteador distribui (via DHCP) endereços como <code>192.168.x.x</code> para celular, TV, PC.</li>
+    <li><strong>IP público</strong> — o endereço da sua casa para o mundo, dado pela operadora. Todos os seus dispositivos "saem" para a internet através dele (NAT).</li>
+    <li>Os sites também têm IP — o servidor do google.com, por exemplo, responde em um IP específico. Como decorar números é impossível, usamos <strong>nomes</strong>, traduzidos pelo <strong>DNS</strong> (a "lista telefônica da internet").</li>
+  </ul>
+
+  <h2>9.4 O que acontece quando você abre um site?</h2>
+  <ol>
+    <li>Você digita <code>www.loja.com.br</code> no navegador e aperta Enter.</li>
+    <li>Seu dispositivo pergunta ao <strong>DNS</strong>: "qual é o IP de loja.com.br?" → recebe algo como <code>203.0.113.42</code>.</li>
+    <li>Seu pedido viaja: celular → <strong>roteador</strong> → <strong>modem</strong> → <strong>operadora</strong> → cabos/antenas → <strong>servidor</strong> da loja.</li>
+    <li>O servidor devolve os arquivos (HTML, imagens...) em <strong>pacotes</strong> pequenos, que viajam por caminhos diferentes e são remontados no seu aparelho.</li>
+    <li>O <strong>navegador</strong> desenha a página na tela. Tudo isso em frações de segundo.</li>
+  </ol>
+  <div class="box box-tip">
+    <div class="box-title">💡 HTTPS e o cadeado</div>
+    <p>Quando o endereço começa com <strong>https://</strong> (e aparece um cadeado 🔒), os dados entre você e o site viajam <strong>criptografados</strong>. Sem isso, senhas poderiam ser interceptadas. Sempre confira antes de digitar dados pessoais.</p>
+  </div>
+
+  <h2>9.5 Velocidade: megabit ≠ megabyte</h2>
+  <ul>
+    <li>Planos de internet são vendidos em <strong>Mbps (megabits por segundo)</strong>: 100 Mbps, 500 Mbps, 1 Gbps.</li>
+    <li>Arquivos são medidos em <strong>MB (megabytes)</strong>. <strong>1 byte = 8 bits</strong>, então 100 Mbps ≈ <strong>12,5 MB/s</strong> de download real (na teoria).</li>
+    <li><strong>Download</strong> = receber dados; <strong>Upload</strong> = enviar. Videochamadas e backups dependem de upload.</li>
+    <li><strong>Ping/latência</strong> = tempo de ida e volta até o servidor, em ms. Importa mais que a velocidade para jogos e chamadas ao vivo.</li>
+    <li>Internet "lenta" nem sempre é culpa da operadora: pode ser Wi-Fi distante, aparelho velho ou muitas pessoas usando ao mesmo tempo.</li>
+  </ul>
+
+  <h2>9.6 A nuvem (de novo, agora sem mistério)</h2>
+  <p>Você já viu a nuvem no Módulo 4 (armazenamento). Agora sabe o que ela é de verdade: <strong>servidores em data centers</strong>, acessados pela internet, rodando majoritariamente <strong>Linux</strong> (Módulo 7). E-mail, streaming, apps de banco, jogos online — tudo depende de servidores remotos. "Estar na nuvem" = "estar no computador de alguém, longe daqui".</p>
+
+  <div class="box box-info">
+    <div class="box-title">ℹ️ Resumindo</div>
+    <p><strong>Rede</strong> = dispositivos conectados; <strong>roteador</strong> distribui e direciona; <strong>IP</strong> identifica cada um; <strong>DNS</strong> traduz nomes em IPs. Abrir um site = DNS → pacotes → servidor → navegador. <strong>Mbps ÷ 8 = MB/s</strong>. Cabo é mais estável que Wi-Fi; <strong>HTTPS</strong> protege seus dados no caminho.</p>
+  </div>
+
+  <h2>🛠️ Atividade prática</h2>
+  <div class="card">
+    <ol>
+      <li>Descubra seu IP local e o do seu roteador: no Windows, abra o Prompt de Comando e digite <code>ipconfig</code> (no Mac/celular: configurações de rede). Anote os endereços 192.168.x.x.</li>
+      <li>Teste sua velocidade em <strong>fast.com</strong> ou <strong>speedtest.net</strong>. Converta o resultado de Mbps para MB/s (divida por 8) e compare com o plano contratado.</li>
+      <li>Fique a 1 metro do roteador e teste a velocidade; depois vá ao canto mais distante da casa e teste de novo. Compare — você acabou de medir na prática a diferença do Wi-Fi.</li>
+      <li>Abra um site qualquer e olhe a barra de endereço: tem https:// e cadeado? Entre na página de configurações do site e veja o certificado.</li>
+    </ol>
+  </div>
+
+  <h2>📝 Quiz do Módulo 9</h2>
+  <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
+  <div class="quiz" id="quiz" data-quiz='[
+    {"q":"Qual equipamento distribui a internet para os dispositivos da sua casa e cria a rede local?","options":["O cabo de força","O roteador","O monitor","O pendrive"],"answer":1,"explain":"O roteador recebe a conexão da operadora e a distribui por cabo ou Wi-Fi para todos os aparelhos."},
+    {"q":"Para que serve o DNS?","options":["Acelerar o download","Traduzir nomes de sites (ex.: google.com) em endereços IP","Proteger contra vírus","Criptografar o Wi-Fi"],"answer":1,"explain":"O DNS é a lista telefônica da internet: transforma nomes amigáveis em números (IPs)."},
+    {"q":"Você contrata 400 Mbps. Qual a velocidade MÁXIMA teórica de download em megabytes por segundo?","options":["400 MB/s","50 MB/s","40 MB/s","800 MB/s"],"answer":1,"explain":"1 byte = 8 bits. 400 Mbps ÷ 8 = 50 MB/s no cenário ideal."},
+    {"q":"O que significa o cadeado e o https:// na barra de endereço?","options":["Que o site é grátis","Que a comunicação com o site é criptografada","Que o site é brasileiro","Que a internet está rápida"],"answer":1,"explain":"HTTPS criptografa os dados em trânsito — essencial ao digitar senhas e dados pessoais."},
+    {"q":"Entre Wi-Fi 2,4 GHz e 5 GHz, qual alternativa está correta?","options":["2,4 GHz é mais rápida e tem menos alcance","5 GHz é mais rápida, porém com alcance menor","São idênticas em tudo","5 GHz atravessa paredes melhor"],"answer":1,"explain":"5 GHz = velocidade; 2,4 GHz = alcance e penetração em paredes. Por isso os roteadores têm as duas."}
+  ]'></div>
+  <div class="quiz-result" id="quiz-result"></div>
+
+  <div class="complete-row">
+    <button class="btn" id="btn-complete" data-module="9">✓ Concluir módulo 9</button>
+    <span class="complete-msg">Módulo concluído!</span>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="modulo-08.html"><span class="dir">← Anterior</span><span class="t">8 · Arquivos e pastas</span></a>
+    <a class="next" href="modulo-10.html"><span class="dir">Próximo módulo →</span><span class="t">10 · Segurança e manutenção</span></a>
+  </div>
+</main>
+
+<footer>Curso Fundamentos de TI · Módulo 9 de 10</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

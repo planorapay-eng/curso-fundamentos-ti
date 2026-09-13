@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 6 — Software e sistemas operacionais | Fundamentos de TI</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo">💻</span> Fundamentos de TI</a>
+    <nav class="topnav">
+      <a href="index.html">Início</a>
+      <a href="modulo-05.html">← Módulo 5</a>
+      <a href="modulo-06.html" class="active">Módulo 6</a>
+      <a href="modulo-07.html">Módulo 7 →</a>
+    </nav>
+  </div>
+  <div class="course-progress">
+    <span id="progress-label">0/10 módulos concluídos</span>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="tag">Módulo 6 · 3 horas</span>
+    <h1>Software: tipos e o papel do sistema operacional</h1>
+    <p class="subtitle">Daqui em diante tiramos o foco das peças e mergulhamos nos programas que dão vida a elas.</p>
+  </div>
+
+  <div class="objectives">
+    <h2>🎯 Objetivos de aprendizagem</h2>
+    <ul>
+      <li>Classificar software em sistema, aplicativo e utilitário.</li>
+      <li>Explicar as funções essenciais de um sistema operacional (SO).</li>
+      <li>Entender o que são drivers, firmware/BIOS e aplicativos.</li>
+      <li>Conhecer o conceito de software livre, código aberto e licenças.</li>
+    </ul>
+  </div>
+
+  <h2>6.1 Os três grandes grupos de software</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Grupo</th><th>O que é</th><th>Exemplos</th></tr>
+    <tr><td><strong>Software de sistema</strong></td><td>Faz o hardware funcionar e serve de base para os outros programas</td><td>Windows, Linux, macOS, Android, iOS, drivers, BIOS/UEFI</td></tr>
+    <tr><td><strong>Software aplicativo</strong></td><td>Resolve tarefas do usuário</td><td>Navegador, WhatsApp, Word, Excel, jogos, Photoshop</td></tr>
+    <tr><td><strong>Software utilitário</strong></td><td>Ferramentas de apoio e manutenção</td><td>Antivírus, descompactador (WinRAR/7-Zip), limpador de disco, gerenciador de backups</td></tr>
+  </table>
+  </div>
+
+  <h2>6.2 O sistema operacional (SO): o gerente de tudo</h2>
+  <p>O <strong>sistema operacional</strong> é o programa mais importante do computador. Sem ele, o hardware não serve para nada. Ele é o primeiro software carregado ao ligar e fica rodando o tempo todo, fazendo quatro trabalhos principais:</p>
+  <ol>
+    <li><strong>Gerenciar o hardware</strong> — decide quem usa o processador, quanta RAM cada programa recebe, o que é gravado no disco.</li>
+    <li><strong>Oferecer uma interface</strong> — janelas, ícones, menus e toques para você não precisar falar "a língua da máquina".</li>
+    <li><strong>Executar e organizar aplicativos</strong> — abrir, alternar e fechar programas com segurança.</li>
+    <li><strong>Cuidar de arquivos e permissões</strong> — guardar arquivos em pastas e controlar quem pode acessar o quê (Módulo 8).</li>
+  </ol>
+
+  <div class="analogy">
+    <div class="box-title">🧠 Analogia final da cozinha</div>
+    <p>O SO é o <strong>gerente do restaurante</strong>: escala os cozinheiros (CPU), organiza as bancadas (RAM), controla a despensa (disco), atende os pedidos na ordem certa e impede que um cozinheiro atrapalhe o outro. Os aplicativos são os <strong>cozinheiros especialistas</strong>: cada um faz um prato (tarefa).</p>
+  </div>
+
+  <h3>Multitarefa: a mágica de "tudo ao mesmo tempo"</h3>
+  <p>Você ouve música, navega e digita "ao mesmo tempo". Na verdade, a CPU <strong>alterna entre as tarefas milhões de vezes por segundo</strong>, dando a ilusão de simultaneidade. Quem decide essa fila é o sistema operacional.</p>
+
+  <h2>6.3 Drivers: os tradutores</h2>
+  <p>Cada peça (impressora, placa de vídeo, webcam) fala uma "língua" própria. O <strong>driver</strong> é o software que <strong>traduz</strong> as ordens do sistema operacional para a língua do dispositivo. Sem driver, a peça não funciona ou funciona mal.</p>
+  <div class="box box-tip">
+    <div class="box-title">💡 Situação clássica</div>
+    <p>"Comprei uma impressora e ela não imprime!" → na maioria das vezes, falta instalar o driver (baixado no site do fabricante) ou conectar o cabo/rede. Suporte técnico resolve muito isso.</p>
+  </div>
+
+  <h2>6.4 BIOS/UEFI: o software que acorda o hardware</h2>
+  <p>Ao apertar o botão de ligar, antes do Windows aparecer, um pequeno programa gravado em um chip da placa-mãe entra em ação: a <strong>BIOS</strong> (antiga) ou <strong>UEFI</strong> (moderna). Ela confere se as peças estão OK (o <strong>POST</strong>) e entrega o comando para o sistema operacional no disco.</p>
+
+  <h2>6.5 Licenças: grátis, pago, livre</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Modelo</th><th>Como funciona</th><th>Exemplos</th></tr>
+    <tr><td><strong>Proprietário (comercial)</strong></td><td>Você paga/licencia e não pode ver nem alterar o código</td><td>Windows, macOS, Microsoft Office, Photoshop</td></tr>
+    <tr><td><strong>Freeware</strong></td><td>Gratuito, mas de código fechado</td><td>Navegadores Chrome/Firefox*, VLC, WhatsApp</td></tr>
+    <tr><td><strong>Código aberto (open source)</strong></td><td>O código-fonte é público: qualquer um pode ver, usar e modificar</td><td>Linux, Firefox, VLC, LibreOffice</td></tr>
+    <tr><td><strong>Software livre</strong></td><td>Código aberto + liberdade garantida de usar, estudar, modificar e compartilhar</td><td>Linux (distribuições), GIMP</td></tr>
+    <tr><td><strong>Assinatura (SaaS)</strong></td><td>Pagamento mensal/anual, geralmente na nuvem</td><td>Microsoft 365, Netflix, Canva Pro, Google Workspace</td></tr>
+  </table>
+  </div>
+  <p>* O Chrome é gratuito mas de código fechado; o Firefox e o Chromium (sua base aberta) são de código aberto.</p>
+  <div class="box box-warn">
+    <div class="box-title">⚠️ Pirataria</div>
+    <p>Software "crackeado" é ilegal e é uma das maiores portas de entrada para vírus e roubo de dados. Hoje há alternativa gratuita de qualidade para quase tudo: <strong>LibreOffice</strong> (Word/Excel), <strong>GIMP</strong> (Photoshop), <strong>Linux</strong> (Windows).</p>
+  </div>
+
+  <h2>6.6 32 bits vs 64 bits (rápido)</h2>
+  <p>É a "largura" com que o sistema trabalha. <strong>64 bits é o padrão atual</strong> e permite usar mais de 4 GB de RAM. Sistemas de 32 bits são antigos e limitados — se vir essa informação ao baixar um programa, escolha sempre a versão 64 bits em computadores modernos.</p>
+
+  <div class="box box-info">
+    <div class="box-title">ℹ️ Resumindo</div>
+    <p>Software se divide em <strong>sistema</strong> (SO, drivers, BIOS), <strong>aplicativo</strong> (tarefas do usuário) e <strong>utilitário</strong> (manutenção). O <strong>SO gerencia hardware, arquivos, programas e a interface</strong>. <strong>Drivers</strong> traduzem o SO para os dispositivos. <strong>UEFI/BIOS</strong> inicia tudo. Licenças variam de pagas a abertas e gratuitas.</p>
+  </div>
+
+  <h2>🛠️ Atividade prática</h2>
+  <div class="card">
+    <ol>
+      <li>Descubra qual sistema operacional e versão você usa: Windows → <strong>Configurações → Sistema → Sobre</strong> (veja "Edição" e "Tipo de sistema: 64 bits").</li>
+      <li>Liste 3 aplicativos, 2 utilitários e 1 software de sistema instalados no seu dispositivo.</li>
+      <li>Baixe e instale um software livre: sugerimos o <strong>LibreOffice</strong> (libreoffice.org) ou o navegador <strong>Firefox</strong>. Perceba: é grátis, legal e completo.</li>
+    </ol>
+  </div>
+
+  <h2>📝 Quiz do Módulo 6</h2>
+  <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
+  <div class="quiz" id="quiz" data-quiz='[
+    {"q":"O navegador, o WhatsApp e o Word são exemplos de:","options":["Software de sistema","Software aplicativo","Firmware","Driver"],"answer":1,"explain":"Aplicativos resolvem tarefas do usuário. Software de sistema é o SO, drivers e BIOS."},
+    {"q":"Qual NÃO é uma função do sistema operacional?","options":["Gerenciar memória e processador","Organizar arquivos e pastas","Controlar permissões de acesso","Aumentar fisicamente a velocidade do processador"],"answer":3,"explain":"O SO gerencia recursos e organiza tudo, mas não altera o hardware fisicamente — velocidade é característica da peça."},
+    {"q":"Um driver serve para:","options":["Limpar vírus do computador","Traduzir as ordens do sistema operacional para um dispositivo específico","Acelerar a internet","Fazer backup dos arquivos"],"answer":1,"explain":"Sem o driver, o SO não sabe conversar com a impressora, placa de vídeo, webcam etc."},
+    {"q":"Software de código aberto (open source) significa que:","options":["É sempre pago","O código-fonte é público e pode ser visto, usado e modificado","Não precisa de instalação","Funciona sem sistema operacional"],"answer":1,"explain":"Exemplos: Linux, Firefox, LibreOffice, VLC."},
+    {"q":"O que a BIOS/UEFI faz ao ligar o computador?","options":["Abre o navegador automaticamente","Confere o hardware (POST) e passa o comando para o sistema operacional","Faz backup dos arquivos","Instala drivers de impressora"],"answer":1,"explain":"É o primeiro programa executado: testa as peças e carrega o SO que está no disco."}
+  ]'></div>
+  <div class="quiz-result" id="quiz-result"></div>
+
+  <div class="complete-row">
+    <button class="btn" id="btn-complete" data-module="6">✓ Concluir módulo 6</button>
+    <span class="complete-msg">Módulo concluído!</span>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="modulo-05.html"><span class="dir">← Anterior</span><span class="t">5 · Periféricos e portas</span></a>
+    <a class="next" href="modulo-07.html"><span class="dir">Próximo módulo →</span><span class="t">7 · Windows, Linux e macOS</span></a>
+  </div>
+</main>
+
+<footer>Curso Fundamentos de TI · Módulo 6 de 10</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

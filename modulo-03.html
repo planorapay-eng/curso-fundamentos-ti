@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 3 — Processador e memória | Fundamentos de TI</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo">💻</span> Fundamentos de TI</a>
+    <nav class="topnav">
+      <a href="index.html">Início</a>
+      <a href="modulo-02.html">← Módulo 2</a>
+      <a href="modulo-03.html" class="active">Módulo 3</a>
+      <a href="modulo-04.html">Módulo 4 →</a>
+    </nav>
+  </div>
+  <div class="course-progress">
+    <span id="progress-label">0/10 módulos concluídos</span>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="tag">Módulo 3 · 3 horas</span>
+    <h1>Processador e memória: o cérebro e a bancada de trabalho</h1>
+    <p class="subtitle">Entenda CPU, núcleos, GHz, memória RAM e cache — e por que "8 GB de RAM" faz tanta diferença.</p>
+  </div>
+
+  <div class="objectives">
+    <h2>🎯 Objetivos de aprendizagem</h2>
+    <ul>
+      <li>Explicar o que o processador faz e o que significam núcleos, threads e GHz.</li>
+      <li>Reconhecer as principais famílias de processadores (Intel Core, AMD Ryzen, Apple, Snapdragon).</li>
+      <li>Entender o papel da memória RAM e como ela afeta a velocidade no dia a dia.</li>
+      <li>Diferenciar RAM de cache e de armazenamento.</li>
+      <li>Ler uma especificação simples e julgar se um computador é adequado ao seu uso.</li>
+    </ul>
+  </div>
+
+  <h2>3.1 O processador (CPU)</h2>
+  <p>A <strong>CPU</strong> (Unidade Central de Processamento) é o chip que <strong>executa as instruções dos programas</strong>: somar, comparar, mover dados, abrir um arquivo, responder a um clique. Ela trabalha em um ciclo contínuo: <strong>buscar</strong> a instrução na memória → <strong>decodificar</strong> (entender o que é) → <strong>executar</strong>. Bilhões de vezes por segundo.</p>
+
+  <h3>Núcleos e threads</h3>
+  <ul>
+    <li><strong>Núcleo (core)</strong> — cada núcleo é como um "trabalhador" dentro do chip. Um processador de 4 núcleos pode fazer várias tarefas ao mesmo tempo.</li>
+    <li><strong>Thread</strong> — é uma "fila de trabalho" para os núcleos. Muitos processadores têm 2 threads por núcleo (ex.: 4 núcleos / 8 threads), o que melhora o aproveitamento.</li>
+  </ul>
+
+  <h3>Velocidade: GHz</h3>
+  <p><strong>GHz (gigahertz)</strong> mede quantos <strong>ciclos por segundo</strong> o processador executa: 3,0 GHz = 3 bilhões de ciclos por segundo. Mais GHz = mais rápido, <strong>mas só comparando processadores da mesma geração/família</strong>. Um processador moderno de 2,5 GHz pode superar um antigo de 4 GHz, porque faz mais trabalho por ciclo.</p>
+
+  <h3>Famílias de processadores que você vai ver nas lojas</h3>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Família</th><th>Fabricante</th><th>Onde aparece</th><th>Ideia geral</th></tr>
+    <tr><td>Core i3 / i5 / i7 / i9</td><td>Intel</td><td>Notebooks e desktops Windows</td><td>i3 = básico, i5 = intermediário (ótimo custo-benefício), i7/i9 = avançado</td></tr>
+    <tr><td>Ryzen 3 / 5 / 7 / 9</td><td>AMD</td><td>Notebooks e desktops Windows</td><td>Concorrente direto da linha Core, mesma lógica de números</td></tr>
+    <tr><td>M1 / M2 / M3 / M4</td><td>Apple</td><td>Macs e iPads</td><td>Muito eficientes; integram CPU, GPU e RAM no mesmo chip</td></tr>
+    <tr><td>Snapdragon / Dimensity / Exynos / Tensor</td><td>Qualcomm, MediaTek, Samsung, Google</td><td>Celulares e tablets</td><td>Feitos para gastar pouca bateria</td></tr>
+  </table>
+  </div>
+
+  <h2>3.2 Memória RAM: a bancada de trabalho</h2>
+  <p>A <strong>RAM</strong> (Random Access Memory, memória de acesso aleatório) guarda <strong>temporariamente</strong> os programas abertos e os dados em uso. Ela é <strong>muito mais rápida que o HD/SSD</strong>, mas é <strong>volátil</strong>: desligou o computador, tudo que estava nela some (por isso você precisa salvar seus arquivos!).</p>
+
+  <div class="analogy">
+    <div class="box-title">🧠 Analogia da bancada</div>
+    <p>O chef (CPU) só consegue cozinhar o que está na <strong>bancada (RAM)</strong>. Os ingredientes ficam na <strong>despensa (HD/SSD)</strong>. Bancada pequena = o chef vive indo e voltando da despensa = cozinha lenta. Bancada grande = várias receitas ao mesmo tempo = tudo mais rápido. <strong>Ter pouca RAM é a causa nº 1 de computador lento para uso comum.</strong></p>
+  </div>
+
+  <h3>Quanta RAM você precisa? (referência para hoje)</h3>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Quantidade</th><th>Perfil</th></tr>
+    <tr><td><strong>4 GB</strong></td><td>Muito pouco — só navegação leve; evita se possível</td></tr>
+    <tr><td><strong>8 GB</strong></td><td>Mínimo confortável: estudos, escritório, navegação com várias abas</td></tr>
+    <tr><td><strong>16 GB</strong></td><td>Ideal para trabalho pesado, muitas abas, jogos, edição leve</td></tr>
+    <tr><td><strong>32 GB+</strong></td><td>Profissionais: edição de vídeo, programação avançada, IA</td></tr>
+  </table>
+  </div>
+
+  <h3>Cache: a prateleira ao lado do chef</h3>
+  <p>Dentro do processador existe uma memória ainda menor e mais rápida que a RAM: a <strong>memória cache</strong> (L1, L2, L3). Ela guarda as instruções e dados que a CPU está usando <strong>agora</strong>, evitando buscar na RAM o tempo todo. Você não escolhe cache ao comprar — ela já vem no processador — mas agora sabe que existe.</p>
+
+  <h3>RAM ≠ armazenamento</h3>
+  <div class="box box-warn">
+    <div class="box-title">⚠️ Confusão clássica de iniciante</div>
+    <p>"Esse celular tem 128 GB" → isso é <strong>armazenamento</strong> (espaço para fotos e apps, permanente). "Tem 8 GB de RAM" → isso é <strong>memória de trabalho</strong> (temporária, para velocidade). São coisas diferentes e as duas importam!</p>
+  </div>
+
+  <h2>3.3 Juntando tudo: um exemplo real</h2>
+  <p>Você clica duas vezes no ícone do navegador:</p>
+  <ol>
+    <li>O <strong>SSD</strong> entrega os arquivos do programa para a <strong>RAM</strong>.</li>
+    <li>A <strong>CPU</strong> busca as instruções na RAM (e na cache) e começa a executar.</li>
+    <li>A <strong>GPU/vídeo</strong> desenha a janela na tela.</li>
+    <li>Cada aba nova aberta ocupa <strong>mais RAM</strong>. Com RAM de sobra, tudo fluido; com RAM cheia, o computador começa a usar o disco como "RAM de emergência" (memória virtual/paginação) e <strong>trava</strong>.</li>
+  </ol>
+
+  <h2>3.4 Como ver isso no seu computador</h2>
+  <ul>
+    <li><strong>Windows:</strong> clique com o botão direito na barra de tarefas → <strong>Gerenciador de Tarefas</strong> → aba <strong>Desempenho</strong>. Veja CPU (modelo, núcleos, GHz) e Memória (GB em uso).</li>
+    <li><strong>Mac:</strong> menu Apple → <strong>Sobre Este Mac</strong> e <strong>Monitor de Atividade</strong>.</li>
+    <li><strong>Android:</strong> Configurações → Sobre o telefone.</li>
+    <li><strong>iPhone:</strong> Ajustes → Geral → Sobre.</li>
+  </ul>
+
+  <div class="box box-info">
+    <div class="box-title">ℹ️ Resumindo</div>
+    <p><strong>CPU</strong> executa instruções; <strong>núcleos</strong> permitem fazer várias coisas ao mesmo tempo; <strong>GHz</strong> mede ciclos por segundo (compare só dentro da mesma geração). <strong>RAM</strong> é a bancada temporária e rápida — 8 GB é o mínimo razoável, 16 GB é confortável. <strong>Cache</strong> é a memória ultrarrápida dentro da CPU. RAM some ao desligar; armazenamento não.</p>
+  </div>
+
+  <h2>🛠️ Atividade prática</h2>
+  <div class="card">
+    <ol>
+      <li>Abra o <strong>Gerenciador de Tarefas</strong> (ou equivalente no seu dispositivo) e anote: modelo do processador, número de núcleos, quantidade total de RAM e quanto está em uso.</li>
+      <li>Abra 10 abas no navegador + um editor de texto e observe a memória em uso subir. Feche tudo e observe cair. Você acabou de ver a "bancada" funcionando!</li>
+      <li>Pesquise em uma loja online um notebook com "Core i5 16GB" e outro com "Celeron 4GB". Compare os preços e pense: qual serve para estudar? Qual você evitaria?</li>
+    </ol>
+  </div>
+
+  <h2>📝 Quiz do Módulo 3</h2>
+  <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
+  <div class="quiz" id="quiz" data-quiz='[
+    {"q":"O que acontece com os dados da memória RAM quando o computador é desligado?","options":["São salvos automaticamente no SSD","São perdidos, pois a RAM é volátil","Ficam guardados na cache","Viram arquivos no Windows"],"answer":1,"explain":"A RAM é volátil: sem energia, tudo some. Por isso salvamos os arquivos no armazenamento permanente."},
+    {"q":"Um processador tem 4 núcleos. O que isso significa na prática?","options":["Que ele é 4 vezes mais rápido em GHz","Que ele pode executar várias tarefas em paralelo, como 4 trabalhadores","Que ele tem 4 GB de RAM","Que ele consome 4 vezes mais internet"],"answer":1,"explain":"Cada núcleo executa trabalho independentemente, permitindo paralelismo entre tarefas."},
+    {"q":"Para estudo, escritório e navegação com várias abas, qual configuração é o mínimo recomendável hoje?","options":["2 GB de RAM","8 GB de RAM","64 GB de RAM","Não importa a RAM"],"answer":1,"explain":"8 GB é o mínimo confortável; 4 GB já causa travamentos; 16 GB é ainda melhor."},
+    {"q":"Qual é a diferença correta entre RAM e armazenamento?","options":["São a mesma coisa com nomes diferentes","RAM é temporária e rápida (trabalho atual); armazenamento é permanente (arquivos)","RAM guarda fotos; armazenamento guarda programas abertos","Armazenamento é mais rápido que RAM"],"answer":1,"explain":"RAM = bancada de trabalho volátil. Armazenamento (HD/SSD) = despensa permanente."},
+    {"q":"GHz mede:","options":["O tamanho físico do processador","A quantidade de memória cache","O número de ciclos (operações básicas) por segundo do processador","A velocidade da internet"],"answer":2,"explain":"3 GHz = 3 bilhões de ciclos por segundo. Mas só compare GHz entre processadores da mesma geração."}
+  ]'></div>
+  <div class="quiz-result" id="quiz-result"></div>
+
+  <div class="complete-row">
+    <button class="btn" id="btn-complete" data-module="3">✓ Concluir módulo 3</button>
+    <span class="complete-msg">Módulo concluído!</span>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="modulo-02.html"><span class="dir">← Anterior</span><span class="t">2 · Por dentro do computador</span></a>
+    <a class="next" href="modulo-04.html"><span class="dir">Próximo módulo →</span><span class="t">4 · Armazenamento</span></a>
+  </div>
+</main>
+
+<footer>Curso Fundamentos de TI · Módulo 3 de 10</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>

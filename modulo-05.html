@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 5 — Periféricos e portas | Fundamentos de TI</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="logo">💻</span> Fundamentos de TI</a>
+    <nav class="topnav">
+      <a href="index.html">Início</a>
+      <a href="modulo-04.html">← Módulo 4</a>
+      <a href="modulo-05.html" class="active">Módulo 5</a>
+      <a href="modulo-06.html">Módulo 6 →</a>
+    </nav>
+  </div>
+  <div class="course-progress">
+    <span id="progress-label">0/10 módulos concluídos</span>
+    <div class="bar"><i></i></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="page-head">
+    <span class="tag">Módulo 5 · 2 horas</span>
+    <h1>Periféricos, portas e conexões</h1>
+    <p class="subtitle">Teclado, mouse, monitor, USB, HDMI: como o mundo externo conversa com o computador.</p>
+  </div>
+
+  <div class="objectives">
+    <h2>🎯 Objetivos de aprendizagem</h2>
+    <ul>
+      <li>Classificar periféricos em entrada, saída e mistos.</li>
+      <li>Reconhecer as portas e cabos mais comuns (USB-A, USB-C, HDMI, P2, rede).</li>
+      <li>Entender resolução de tela, Hertz e os tipos de monitor.</li>
+      <li>Conhecer as formas de conexão sem fio: Bluetooth e Wi-Fi.</li>
+    </ul>
+  </div>
+
+  <h2>5.1 O que são periféricos?</h2>
+  <p><strong>Periféricos</strong> são os dispositivos conectados ao computador que ficam "na periferia" do sistema — eles trazem informações para dentro ou levam para fora:</p>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Tipo</th><th>Função</th><th>Exemplos</th></tr>
+    <tr><td><strong>Entrada</strong></td><td>Enviam dados PARA o computador</td><td>Teclado, mouse, microfone, webcam, scanner, leitor de código de barras</td></tr>
+    <tr><td><strong>Saída</strong></td><td>Recebem dados DO computador</td><td>Monitor, caixa de som, fone de ouvido, impressora, projetor</td></tr>
+    <tr><td><strong>Mistos (entrada e saída)</strong></td><td>Fazem as duas coisas</td><td>Tela touch, headset (fone+microfone), multifuncional (imprime e escaneia), pendrive</td></tr>
+  </table>
+  </div>
+
+  <h2>5.2 Monitor: entenda as especificações</h2>
+  <ul>
+    <li><strong>Resolução</strong> — quantidade de pontos (pixels) na tela: <strong>Full HD (1920×1080)</strong> é o padrão mínimo bom; <strong>2K/QHD (2560×1440)</strong> e <strong>4K (3840×2160)</strong> oferecem mais nitidez.</li>
+    <li><strong>Taxa de atualização (Hz)</strong> — quantas imagens por segundo: 60 Hz é o padrão; 120/144 Hz dá fluidez extra em jogos.</li>
+    <li><strong>Tamanho</strong> — medido na diagonal, em polegadas: 21" a 24" para estudo/trabalho; 27"+ para produtividade e criação.</li>
+    <li><strong>Painel</strong> — IPS tem melhores cores e ângulo de visão; VA tem melhor contraste; TN é o mais barato e antigo; OLED é o topo de linha.</li>
+  </ul>
+
+  <h2>5.3 Teclado e mouse</h2>
+  <ul>
+    <li><strong>Teclados</strong> podem ser de membrana (comuns e baratos) ou <strong>mecânicos</strong> (cada tecla tem um interruptor próprio — mais duráveis e preferidos por quem digita muito ou joga).</li>
+    <li>O layout brasileiro é o <strong>ABNT2</strong>, com a tecla "Ç". Notebooks importados costumam vir no padrão americano (sem Ç).</li>
+    <li><strong>Mouse:</strong> o sensor óptico mede o movimento em <strong>DPI</strong> (sensibilidade). Para uso comum, qualquer mouse serve; sem fio usa um adaptador USB ou Bluetooth.</li>
+  </ul>
+
+  <h2>5.4 As portas (conectores) que você precisa reconhecer</h2>
+  <div class="table-wrap">
+  <table>
+    <tr><th>Porta</th><th>Para que serve</th><th>Detalhe</th></tr>
+    <tr><td><strong>USB-A</strong></td><td>A USB "clássica" retangular: pendrive, mouse, teclado</td><td>Encaixa de um lado só</td></tr>
+    <tr><td><strong>USB-C</strong></td><td>A moderna, oval e reversível: dados, vídeo e até energia</td><td>Padrão em celulares novos e notebooks atuais; cabos podem carregar o notebook</td></tr>
+    <tr><td><strong>HDMI</strong></td><td>Leva imagem + som para TV, monitor e projetor</td><td>O cabo mais usado em TVs</td></tr>
+    <tr><td><strong>DisplayPort</strong></td><td>Alternativa ao HDMI, comum em monitores de trabalho/jogos</td><td>Suporta altas resoluções e Hz</td></tr>
+    <tr><td><strong>P2 (3,5 mm)</strong></td><td>Fone de ouvido e microfone com fio</td><td>Sumindo dos celulares, vive nos PCs</td></tr>
+    <tr><td><strong>RJ-45 (rede)</strong></td><td>Cabo de internet com fio (ethernet)</td><td>Mais estável que Wi-Fi para jogos e trabalho</td></tr>
+  </table>
+  </div>
+  <div class="box box-tip">
+    <div class="box-title">💡 USB 2.0 vs 3.0</div>
+    <p>Nem todo USB é igual: o <strong>USB 2.0</strong> (geralmente preto por dentro) transfere até ~35 MB/s na prática; o <strong>USB 3.0</strong> (geralmente azul) é até 10x mais rápido. Para HD externo e pendrive, use sempre a porta azul!</p>
+  </div>
+
+  <h2>5.5 Sem fio: Bluetooth e Wi-Fi</h2>
+  <ul>
+    <li><strong>Bluetooth</strong> — conexão sem fio de curto alcance (uns 10 m) e baixo consumo: fones, mouses, teclados, caixas de som, relógios.</li>
+    <li><strong>Wi-Fi</strong> — rede sem fio de maior alcance e velocidade que conecta seus dispositivos ao roteador e daí à internet (assunto do Módulo 9).</li>
+  </ul>
+
+  <h2>5.6 Impressoras (noções)</h2>
+  <ul>
+    <li><strong>Jato de tinta</strong> — cartuchos líquidos; boa para fotos e pouco volume; cartuchos podem custar caro.</li>
+    <li><strong>Laser/toner</strong> — pó (toner); ideal para muito texto em escritório; mais rápida e econômica por página.</li>
+    <li><strong>Multifuncional</strong> — imprime, copia e escaneia; a maioria doméstica hoje.</li>
+  </ul>
+
+  <div class="box box-info">
+    <div class="box-title">ℹ️ Resumindo</div>
+    <p>Periféricos são de <strong>entrada</strong> (teclado, mouse), <strong>saída</strong> (monitor, impressora) ou <strong>mistos</strong> (touch, headset). Portas essenciais: <strong>USB-A, USB-C, HDMI, P2 e RJ-45</strong>. Monitor: Full HD mínimo, 60 Hz padrão. Sem fio: <strong>Bluetooth</strong> para acessórios, <strong>Wi-Fi</strong> para rede.</p>
+  </div>
+
+  <h2>🛠️ Atividade prática</h2>
+  <div class="card">
+    <ol>
+      <li>Faça um "tour" pelas portas do seu computador ou notebook: identifique cada uma usando a tabela do item 5.4. Conte quantas USB e se tem HDMI.</li>
+      <li>Conecte (ou tente parear) um fone ou caixa de som <strong>Bluetooth</strong>: Configurações → Bluetooth e dispositivos → Adicionar dispositivo.</li>
+      <li>Descubra a resolução da sua tela: Windows → Configurações → Sistema → Tela. Anote e compare com a tabela do item 5.2.</li>
+    </ol>
+  </div>
+
+  <h2>📝 Quiz do Módulo 5</h2>
+  <p>Responda as 5 questões. Acerte 70% (4 de 5) ou mais para concluir!</p>
+  <div class="quiz" id="quiz" data-quiz='[
+    {"q":"O teclado é um periférico de:","options":["Saída","Entrada","Armazenamento","Processamento"],"answer":1,"explain":"Teclado envia dados PARA o computador, logo é periférico de entrada."},
+    {"q":"Qual porta transmite imagem E som para uma TV?","options":["USB-A","RJ-45","HDMI","P2"],"answer":2,"explain":"HDMI leva vídeo e áudio juntos. P2 leva só áudio; RJ-45 é rede; USB-A é dados/energia."},
+    {"q":"O USB-C se destaca porque:","options":["É o mais antigo de todos","É reversível e pode transmitir dados, vídeo e energia","Só existe em impressoras","É exclusivo da Apple"],"answer":1,"explain":"O formato oval encaixa dos dois lados e um único cabo pode fazer tudo, inclusive carregar notebooks."},
+    {"q":"A resolução Full HD corresponde a:","options":["1920×1080 pixels","3840×2160 pixels","800×600 pixels","2560×1440 pixels"],"answer":0,"explain":"Full HD = 1920×1080. 2560×1440 é 2K/QHD e 3840×2160 é 4K."},
+    {"q":"Bluetooth é mais usado para:","options":["Conectar o computador à internet","Conectar acessórios de curto alcance como fones, mouses e teclados","Imprimir documentos","Ligar o monitor na energia"],"answer":1,"explain":"Bluetooth = acessórios pessoais de curto alcance. Internet é papel do Wi-Fi/cabo de rede."}
+  ]'></div>
+  <div class="quiz-result" id="quiz-result"></div>
+
+  <div class="complete-row">
+    <button class="btn" id="btn-complete" data-module="5">✓ Concluir módulo 5</button>
+    <span class="complete-msg">Módulo concluído!</span>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="modulo-04.html"><span class="dir">← Anterior</span><span class="t">4 · Armazenamento</span></a>
+    <a class="next" href="modulo-06.html"><span class="dir">Próximo módulo →</span><span class="t">6 · Software e sistemas operacionais</span></a>
+  </div>
+</main>
+
+<footer>Curso Fundamentos de TI · Módulo 5 de 10</footer>
+<script src="assets/main.js"></script>
+</body>
+</html>
